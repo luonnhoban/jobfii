@@ -753,13 +753,25 @@
 /* Hot news banner
   ------------------------------------------------------------------------------------- */
 
-if (document.querySelector('#banner .hot-news-block')) {
-  const hotNewsContent = document.querySelector('#banner .hot-news-block .hot-news-content')
-  setTimeout(() => {
-    hotNewsContent.classList.toggle('show')
-  }, 1000)
+document.addEventListener('DOMContentLoaded', function () {
+  if (document.querySelector('#banner .hot-news-block')) {
+    const newsItems = document.querySelectorAll('#banner .hot-news-block .hot-news-content');
+    let currentIndex = 0;
 
-  // setInterval(() => {
-  //   hotNewsContent.classList.toggle('show')
-  // }, 3000)
-}
+    function updateNews() {
+      newsItems.forEach(item => {
+        if(item.classList.contains('show')) {
+          item.classList.remove('show');
+        }
+      });
+
+      newsItems[currentIndex].classList.add('show');
+      currentIndex = (currentIndex + 1) % newsItems.length;
+    }
+    
+    updateNews()
+
+    // Gọi hàm cập nhật tin tức mỗi 6 giây
+    setInterval(updateNews, 6000);
+  }
+});
