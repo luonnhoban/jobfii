@@ -1,3 +1,7 @@
+// if ($("div").hasClass("category-job-slider")) {
+  
+// }
+
 if ($("div").hasClass("swiper")) {
   var swiper = new Swiper(".tes-slider", {
     loop: true,

@@ -755,7 +755,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   if (document.querySelector('#banner .hot-news-block')) {
-    const newsItems = document.querySelectorAll('#banner .hot-news-block .hot-news-content');
+    const newsItems = document.querySelectorAll('#banner .hot-news-block .hot-news-content p');
     let currentIndex = 0;
 
     function updateNews() {
@@ -774,4 +774,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // Gọi hàm cập nhật tin tức mỗi 6 giây
     setInterval(updateNews, 6000);
   }
+});
+
+
+$('.category-job-slider').slick({
+  infinite: true,
+  slidesToShow: 6,
+  slidesToScroll: 1,
+  arrows: false,
+  dots: true
 });
