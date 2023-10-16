@@ -224,7 +224,7 @@ if ($("div").hasClass("swiper")) {
         slidesPerView: 5,
       },
       1600: {
-        slidesPerView: 6,
+        slidesPerView: 11,
       },
     },
     autoplay: {

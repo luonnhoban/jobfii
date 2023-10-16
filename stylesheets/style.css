@@ -2702,7 +2702,7 @@ input[type="color"],
   display: inline-grid;
   border: 4.5px solid #0000;
   border-radius: 50%;
-  border-color: #14a076a3 #0000;
+  border-color: #863ff8 #0000;
   animation: spinner-preloader 1s infinite linear;
 }
 
@@ -2716,7 +2716,7 @@ input[type="color"],
 }
 
 .spinner::before {
-  border-color: #6728D0 #0000;
+  border-color: #a277e7 #0000;
   animation: inherit;
   animation-duration: 0.5s;
   animation-direction: reverse;
@@ -2724,6 +2724,32 @@ input[type="color"],
 
 .spinner::after {
   margin: 8.9px;
+}
+
+/* Chat bot
+-------------------------------------------------------------- */
+.chat-bot-icon>div {
+  position: fixed;
+  justify-content: center;
+  right: 0;
+  top: 70vh;
+  width: 80px;
+  height: 80px;
+  border-radius: 99px 99px 0 99px;
+  overflow: hidden;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.chat-bot-icon>div i::before {
+  color: var(--white);
+  font-size: 24px;
+}
+
+.chat-bot-icon>div p {
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 16px;
 }
 
 /* Switcher

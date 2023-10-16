@@ -129,10 +129,13 @@
     transition: all ease 0.3s;
     border: none;
     outline: none;
+    cursor: pointer;
+    text-align: center;
 }
 
-.button-fill-purple-hover {
+.button-fill-purple-hover:hover {
     background-color: #5c2ea5;
+    color: var(--white);
 }
 
 .button-border-purple {
@@ -142,10 +145,13 @@
     border-radius: 4px;
     border: 1px solid var(--purple);
     transition: all ease 0.3s;
+    cursor: pointer;
+    text-align: center;
 }
 
-.button-border-purple-hover {
+.button-border-purple-hover:hover {
     background-color: var(--purple);
+    color: var(--white);
 }
 
 .text-purple {
@@ -199,6 +205,20 @@
 .flex-item-center {
     display: flex;
     align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.w-40 {
+    width: 40px;
+}
+
+.h-40 {
+    height: 40px;
 }
 
 .gap-40 {
@@ -585,6 +605,10 @@
     margin-top: 4px !important;
 }
 
+.ml-8 {
+    margin-left: 8px;
+}
+
 .bora-50 {
     border-radius: 50%;
 }
@@ -615,4 +639,8 @@
 
 .bora-8 {
     border-radius: 8px;
+}
+
+.border-line {
+    border: 1px solid var(--line);
 }

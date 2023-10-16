@@ -760,7 +760,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateNews() {
       newsItems.forEach(item => {
-        if(item.classList.contains('show')) {
+        if (item.classList.contains('show')) {
           item.classList.remove('show');
         }
       });
@@ -768,7 +768,7 @@ document.addEventListener('DOMContentLoaded', function () {
       newsItems[currentIndex].classList.add('show');
       currentIndex = (currentIndex + 1) % newsItems.length;
     }
-    
+
     updateNews()
 
     // Gọi hàm cập nhật tin tức mỗi 6 giây
@@ -777,10 +777,303 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-$('.category-job-slider').slick({
+/* Job Category Slider
+  ------------------------------------------------------------------------------------- */
+
+$('.job-category-slider').slick({
   infinite: true,
   slidesToShow: 6,
-  slidesToScroll: 1,
+  slidesToScroll: 2,
   arrows: false,
-  dots: true
+  dots: true,
+  touchThreshold: 1000,
+  swipe: true,
+  // swipeToSlide: true,
+  autoplay: false,
+  centerMode: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  pauseOnDotsHover: false,
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+});
+
+
+/* List people connect, List company follow
+  ------------------------------------------------------------------------------------- */
+
+$('.list-7-col').slick({
+  infinite: true,
+  slidesToShow: 7,
+  slidesToScroll: 2,
+  arrows: false,
+  dots: true,
+  touchThreshold: 1000,
+  swipe: true,
+  // swipeToSlide: true,
+  // autoplay: false,
+  // centerMode: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  pauseOnDotsHover: false,
+  responsive: [
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 6,
+        slidesToScroll: 6,
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 5,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+});
+
+
+/* List locations
+  ------------------------------------------------------------------------------------- */
+
+$('.list-locations').slick({
+  infinite: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+  arrows: false,
+  dots: true,
+  touchThreshold: 1000,
+  swipe: true,
+  swipeToSlide: true,
+  // autoplay: false,
+  centerMode: true,
+  centerPadding: '190px',
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  pauseOnDotsHover: false,
+  responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerMode: true,
+        centerPadding: '80px',
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '150px',
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '60px',
+      }
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '36px',
+      }
+    },
+  ]
+});
+
+
+/* List News
+  ------------------------------------------------------------------------------------- */
+
+$('.list-news.list-4-col').slick({
+  infinite: true,
+  slidesToShow: 4,
+  slidesToScroll: 3,
+  arrows: false,
+  dots: true,
+  touchThreshold: 1000,
+  swipe: true,
+  swipeToSlide: true,
+  // autoplay: false,
+  centerMode: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  pauseOnDotsHover: false,
+  responsive: [
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+});
+
+
+/* List News
+------------------------------------------------------------------------------------- */
+
+$('.list-partner').slick({
+  infinite: true,
+  slidesToShow: 11,
+  slidesToScroll: 1,
+  // variableWidth: true,
+  arrows: false,
+  dots: false,
+  touchThreshold: 1000,
+  swipe: true,
+  swipeToSlide: true,
+  autoplay: true,
+  centerMode: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  pauseOnDotsHover: false,
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 10,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 9,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 7,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 6,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+  ]
 });
