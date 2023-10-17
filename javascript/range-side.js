@@ -5,5 +5,5 @@ output.innerHTML = slider.value;
 slider.oninput = function () {
   output.innerHTML = this.value;
   const value = this.value;
-  this.style.background = `linear-gradient(to right, #14A077 0%, #14A077 ${value}%, #ddd ${value}%, #ddd 0%)`;
+  this.style.background = `linear-gradient(to right, #6728D0 0%, #6728D0 ${value}%, #ddd ${value}%, #ddd 0%)`;
 };

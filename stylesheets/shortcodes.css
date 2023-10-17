@@ -2143,30 +2143,41 @@
   z-index: 1;
 }
 
+.category-icon-block .group-icon {
+  
+}
+
 .sl-icon-box {
   text-align: center;
 }
 
+.sl-icon-box .icon-block {
+  padding: 0 50px;
+}
+
 .sl-icon-box .icon {
-  width: 68px;
-  height: 68px;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(2px);
+  width: 40px;
+  height: 40px;
+  background: var(--surface);
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
+}
+
+.sl-icon-box .icon svg {
+  height: 24px;
 }
 
 .sl-icon-box .icon-content h5 {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: 24px;
 }
 
 .sl-icon-box .icon-content h5 a {
-  color: #ffffff;
+  color: var(--on-surface);
 }
 
 .sl-icon-box .icon-content h5 a:hover {
@@ -2176,13 +2187,13 @@
 .group-icon {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -40px;
-  margin-top: 133px;
+  /* margin-left: -40px; */
 }
 
-.group-icon .sl-icon-box.box {
-  width: calc(12.5% - 40px);
-  margin-left: 40px;
+.group-icon .sl-icon-box.box .icon {
+  /* width: calc(12.5% - 40px);
+  margin-left: 40px; */
+  /* padding: 0 50px; */
 }
 
 .wrap-testimonials .menu-tab {
@@ -3480,13 +3491,13 @@
 }
 
 .widget-filter {
-  background: #f5f5f5;
+  background: var(--surface);
   box-shadow: 0px 2px 2px rgba(28, 36, 51, 0.1);
   padding: 24px 24px 24px 24px;
 }
 
 .widget-filter .group-form {
-  margin-bottom: 28px;
+  margin-bottom: 16px;
 }
 
 .widget-filter .group-form .title {
@@ -3756,7 +3767,7 @@
 }
 
 .group-half-map.style2 .widget-filter {
-  padding: 12px 23px 20px 16px;
+  padding: 16px 24px;
 }
 
 .group-half-map .content-left {
@@ -3773,13 +3784,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 
 .wd-findjob-filer.style-map {
   display: block;
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 .wd-findjob-filer.style-map .group-select {
@@ -3960,7 +3971,7 @@
 }
 
 .group-half-map.style2 .content-left .st-filter {
-  margin-right: 24px;
+  margin-right: 20px;
   width: 48%;
 }
 
@@ -7564,28 +7575,33 @@
 }
 
 #banner .banner-content .hot-news-block .hot-news-content p.show {
-  animation: marquee 6s linear infinite;
+  animation: marquee 4s ease-in-out infinite;
 }
 
 @keyframes marquee {
   0% {
     transform: translateX(0);
+    opacity: 0;
   }
 
   25% {
     transform: translateX(calc(100% + 8px));
+    opacity: 1;
   }
 
   65% {
     transform: translateX(calc(100% + 8px));
+    opacity: 1;
   }
 
   90% {
     transform: translateX(0);
+    opacity: 0;
   }
 
   100% {
     transform: translateX(0);
+    opacity: 0;
   }
 }
 
@@ -8350,7 +8366,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Banner Auto Scroll */
 .banner-auto-block .banner-auto-main {
-  width: calc(333.44px * 6 + 38px * 6 + 40px * 11);
+  width: calc(333.44px * 8 + 38px * 8 + 40px * 14);
   overflow: hidden;
   animation: scroll 10s linear infinite;
 }
@@ -8371,7 +8387,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   to {
-    transform: translateX(calc((333.44px * 6 + 38px * 6 + 40px * 11) * -0.339));
+    transform: translateX(calc((333.44px * 8 + 38px * 8 + 40px * 14) * -0.335));
   }
 }
 
@@ -8649,8 +8665,8 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .tf-title h1 {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 44px;
+  font-size: 30px;
+  line-height: 42px;
   color: #121212;
   margin-bottom: 12px;
 }
@@ -10263,17 +10279,9 @@ input[type="number"]::-webkit-inner-spin-button {
   transition: all 0.3s ease;
 }
 
-.group-icon .sl-icon-box.box:hover .icon {
-  background-color: #fff;
-}
-
 .group-icon .sl-icon-box.box:hover .icon:before {
   width: 100%;
   height: 100%;
-}
-
-.group-icon .sl-icon-box.box:hover .icon svg path {
-  fill: #6728D0;
 }
 
 /* MAP */

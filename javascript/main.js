@@ -442,36 +442,36 @@
   };
   /* tfTabs
   ------------------------------------------------------------------------------------- */
-  // var tfTabs = function () {
-  //   $(".tf-tab").each(function () {
-  //     $(this).find(".content-tab").children().hide();
-  //     $(this).find(".content-tab").children().first().show();
-  //     $(this)
-  //       .find(".menu-tab")
-  //       .children("div.user-tag, .btn-display, .ct-tab")
-  //       .on("click", function (e) {
-  //         e.preventDefault();
-  //         var liActive = $(this).index();
-  //         var contentActive = $(this)
-  //           .siblings()
-  //           .removeClass("active")
-  //           .parents(".tf-tab")
-  //           .find(".content-tab")
-  //           .children()
-  //           .eq(liActive);
-  //         contentActive.addClass("active").fadeIn("slow");
-  //         contentActive.siblings().removeClass("active");
-  //         $(this)
-  //           .addClass("active")
-  //           .parents(".tf-tab")
-  //           .find(".content-tab")
-  //           .children()
-  //           .eq(liActive)
-  //           .siblings()
-  //           .hide();
-  //       });
-  //   });
-  // };
+  var tfTabs = function () {
+    $(".tf-tab").each(function () {
+      $(this).find(".content-tab").children().hide();
+      $(this).find(".content-tab").children().first().show();
+      $(this)
+        .find(".menu-tab")
+        .children("div.user-tag, .btn-display, .ct-tab")
+        .on("click", function (e) {
+          e.preventDefault();
+          var liActive = $(this).index();
+          var contentActive = $(this)
+            .siblings()
+            .removeClass("active")
+            .parents(".tf-tab")
+            .find(".content-tab")
+            .children()
+            .eq(liActive);
+          contentActive.addClass("active").fadeIn("slow");
+          contentActive.siblings().removeClass("active");
+          $(this)
+            .addClass("active")
+            .parents(".tf-tab")
+            .find(".content-tab")
+            .children()
+            .eq(liActive)
+            .siblings()
+            .hide();
+        });
+    });
+  };
   /* btn nav menu
   ------------------------------------------------------------------------------------- */
   var btnmenu = function () {
@@ -728,7 +728,7 @@
     goTop();
     counter();
     setTimeIn();
-    // tfTabs();
+    tfTabs();
     filter();
     stickSidebar();
     parallax();
@@ -772,7 +772,7 @@ document.addEventListener('DOMContentLoaded', function () {
     updateNews()
 
     // Gọi hàm cập nhật tin tức mỗi 6 giây
-    setInterval(updateNews, 6000);
+    setInterval(updateNews, 4000);
   }
 });
 
