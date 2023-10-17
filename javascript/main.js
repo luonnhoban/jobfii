@@ -442,36 +442,36 @@
   };
   /* tfTabs
   ------------------------------------------------------------------------------------- */
-  var tfTabs = function () {
-    $(".tf-tab").each(function () {
-      $(this).find(".content-tab").children().hide();
-      $(this).find(".content-tab").children().first().show();
-      $(this)
-        .find(".menu-tab")
-        .children("div.user-tag, .btn-display, .ct-tab")
-        .on("click", function (e) {
-          e.preventDefault();
-          var liActive = $(this).index();
-          var contentActive = $(this)
-            .siblings()
-            .removeClass("active")
-            .parents(".tf-tab")
-            .find(".content-tab")
-            .children()
-            .eq(liActive);
-          contentActive.addClass("active").fadeIn("slow");
-          contentActive.siblings().removeClass("active");
-          $(this)
-            .addClass("active")
-            .parents(".tf-tab")
-            .find(".content-tab")
-            .children()
-            .eq(liActive)
-            .siblings()
-            .hide();
-        });
-    });
-  };
+  // var tfTabs = function () {
+  //   $(".tf-tab").each(function () {
+  //     $(this).find(".content-tab").children().hide();
+  //     $(this).find(".content-tab").children().first().show();
+  //     $(this)
+  //       .find(".menu-tab")
+  //       .children("div.user-tag, .btn-display, .ct-tab")
+  //       .on("click", function (e) {
+  //         e.preventDefault();
+  //         var liActive = $(this).index();
+  //         var contentActive = $(this)
+  //           .siblings()
+  //           .removeClass("active")
+  //           .parents(".tf-tab")
+  //           .find(".content-tab")
+  //           .children()
+  //           .eq(liActive);
+  //         contentActive.addClass("active").fadeIn("slow");
+  //         contentActive.siblings().removeClass("active");
+  //         $(this)
+  //           .addClass("active")
+  //           .parents(".tf-tab")
+  //           .find(".content-tab")
+  //           .children()
+  //           .eq(liActive)
+  //           .siblings()
+  //           .hide();
+  //       });
+  //   });
+  // };
   /* btn nav menu
   ------------------------------------------------------------------------------------- */
   var btnmenu = function () {
@@ -728,7 +728,7 @@
     goTop();
     counter();
     setTimeIn();
-    tfTabs();
+    // tfTabs();
     filter();
     stickSidebar();
     parallax();
@@ -1033,6 +1033,7 @@ $('.list-partner').slick({
   swipe: true,
   swipeToSlide: true,
   autoplay: true,
+  autoplaySpeed: 2000,
   centerMode: false,
   pauseOnFocus: false,
   pauseOnHover: false,
@@ -1077,3 +1078,22 @@ $('.list-partner').slick({
     },
   ]
 });
+
+// Remove position sticky form-sticky apply job in detail page
+// Get formSticky and list partners
+const formSticky = document.querySelector('.form-sticky');
+
+// let isFormStickySticky = true; // Sử dụng biến để kiểm tra trạng thái
+
+if (formSticky) {
+  // Thêm một sự kiện cuộn trang web.
+  window.addEventListener('scroll', () => {
+    const formStickyRect = formSticky.getBoundingClientRect();
+    console.log(formStickyRect);
+    if(formStickyRect.top <= 79) {
+      formSticky.style.backgroundColor = '#FFFFFF'
+    } else {
+      formSticky.style.backgroundColor = 'unset'
+    }
+  });
+}

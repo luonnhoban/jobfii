@@ -2471,6 +2471,10 @@
   z-index: 9;
 }
 
+.form-sticky.no-fixed {
+  position: relative;
+}
+
 .form-meta2.is-fixed {
   margin: 0;
   background: #fff;
@@ -2712,7 +2716,6 @@
 .job-article .inner-content .job-rating h6 {
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 29px;
 }
 
 .job-article .inner-content .job-rating {
@@ -3768,13 +3771,30 @@
 
 .wd-findjob-filer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 28px;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+
+.wd-findjob-filer.style-map {
+  display: block;
+  margin-top: 24px;
+}
+
+.wd-findjob-filer.style-map .group-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 .wd-findjob-filer .group-select {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
 }
 
 .wd-findjob-filer .group-select .nice-select {
@@ -3782,6 +3802,16 @@
   background: #f1f1f1;
   border-radius: 4px;
   padding-right: 57px;
+}
+
+.wd-findjob-filer.style-map .group-select .nice-select {
+  width: 48%;
+}
+
+@media (max-width: 550px) {
+  .wd-findjob-filer.style-map .group-select .nice-select {
+    width: 100%;
+  }
 }
 
 .wd-findjob-filer .group-select .nice-select:after {
@@ -3801,10 +3831,6 @@
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   transform: rotate(180deg);
-}
-
-.wd-findjob-filer .group-select .nice-select:not(:last-child) {
-  margin-right: 12px;
 }
 
 .wd-findjob-filer .group-select .nice-select .current {
@@ -3909,10 +3935,16 @@
   padding: 8px 24px;
 }
 
-.group-half-map.style2 .content-left,
-.group-half-map.style2 .content-right,
-.group-half-map.style2 .content-left .inner {
-  width: 50%;
+.group-half-map.style2 .content-left {
+  width: 40%;
+}
+
+.group-half-map.style2 .content-right {
+  width: 60%;
+}
+
+.group-half-map.style2 .content-left .inner.st-job {
+  width: 47%;
 }
 
 .group-half-map.style2 .content-left .inner {
@@ -3928,17 +3960,12 @@
 }
 
 .group-half-map.style2 .content-left .st-filter {
-  margin-right: 27px;
+  margin-right: 24px;
   width: 48%;
-}
-
-.group-half-map.style2 .content-left .st-job {
-  padding: 35px 0px 0px 0px;
 }
 
 .group-half-map.style2 .content-job .features-job {
   padding: 24px 22px 24px 24px;
-  margin-right: 30px;
 }
 
 .group-half-map.style2 .features-job .inner-box .button-readmore {
@@ -4494,6 +4521,11 @@
   fill: #fff;
 }
 
+.group-select-display .btn-display:hover i,
+.group-select-display .btn-display.active i {
+  color: var(--white);
+}
+
 .group-select-display .inner,
 .group-select-display {
   display: flex;
@@ -4654,7 +4686,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 48px;
   background: #fff;
 }
 
@@ -4684,7 +4715,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 28px;
-  margin-bottom: 3px;
+  margin-bottom: 4px;
 }
 
 .wd-job-author2 .content-left .content h6 span {
@@ -4774,7 +4805,7 @@
 }
 
 .wd-job-author2 .content-right .gr-rating p {
-  margin-right: 13px;
+  margin-left: 12px;
 }
 
 .wd-job-author2 .content-right .price .icon-dollar {
@@ -4819,6 +4850,7 @@
 
 .single-job-thumb img {
   height: 431px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -7703,6 +7735,7 @@ button.btn-find:hover {
   margin-bottom: 20px;
   /* gap: 32; */
   border: 1px solid #e5e5e5;
+  border-radius: 8px;
   padding: 20px;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
@@ -7724,6 +7757,7 @@ button.btn-find:hover {
 
 .features-job:hover {
   border: 1px solid #6728D0;
+  box-shadow: 0px 10px 25px 0px rgba(54, 95, 104, 0.10);
   transition: all 0.3s ease-in-out;
 }
 
@@ -7837,6 +7871,7 @@ h3 span.icon-bolt {
 .features-job .job-footer-right {
   padding-top: 16px;
   display: flex;
+  align-items: center;
   justify-content: space-between;
   font-size: 16px;
 }
@@ -10505,6 +10540,16 @@ input[type="number"]::-webkit-inner-spin-button {
   padding: 0px 13px;
 }
 
+.content-tab.find-job-sidebar .inner .row {
+  margin-left: -10px;
+  margin-right: -10px;
+}
+
+.content-tab.find-job-sidebar .inner .row>div {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /*  TF section spacing  */
 .job-category-section {
   padding: 80px 0px 60px;
@@ -10663,6 +10708,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .pricing-section-three,
 .shop-section {
   padding-bottom: 60px;
+  margin-top: 28px;
 }
 
 .candidate-section-two {
