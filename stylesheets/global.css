@@ -41,7 +41,7 @@
 }
 
 .heading7 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     line-height: 28px;
     text-transform: capitalize;
@@ -124,18 +124,19 @@
 .button-fill-purple {
     color: var(--white);
     background-color: var(--purple);
-    padding: 12px 32px;
+    padding: 11px 32px;
     border-radius: 4px;
     transition: all ease 0.3s;
-    border: none;
+    border: 1px solid var(--purple);
     outline: none;
     cursor: pointer;
     text-align: center;
 }
 
 .button-fill-purple-hover:hover {
-    background-color: #5c2ea5;
-    color: var(--white);
+    background-color: var(--white);
+    color: var(--purple);
+    border-color: var(--purple);
 }
 
 .button-border-purple {
@@ -152,6 +153,10 @@
 .button-border-purple-hover:hover {
     background-color: var(--purple);
     color: var(--white);
+}
+
+.text-line {
+    color: var(--line);
 }
 
 .text-purple {
@@ -639,6 +644,10 @@
 
 .bora-8 {
     border-radius: 8px;
+}
+
+.bora-4 {
+    border-radius: 4px;
 }
 
 .border-line {

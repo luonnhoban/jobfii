@@ -655,6 +655,29 @@
       );
     }
   };
+  /* ageSlider
+  ------------------------------------------------------------------------------------- */
+  var ageSlider = function () {
+    if ($(".age-slider-one").length) {
+      $(".age-slider-one .age-slider").slider({
+        range: true,
+        min: 0,
+        max: 60,
+        values: [15, 50],
+        slide: function (event, ui) {
+          $(".age-slider-one .count").text(
+            ui.values[0] + " - " + ui.values[1]
+          );
+        },
+      });
+
+      $(".age-slider-one .count").text(
+        $(".age-slider").slider("values", 0) +
+        " - " +
+        $(".age-slider").slider("values", 1)
+      );
+    }
+  };
   /* btnQuantity
   ------------------------------------------------------------------------------------- */
   var btnQuantity = function () {
@@ -743,6 +766,7 @@
     popUpLightBox();
     progressProduct();
     rangeSlider();
+    ageSlider();
     btnmenu();
     swClick();
     btnCategory();
@@ -1096,4 +1120,15 @@ if (formSticky) {
       formSticky.style.backgroundColor = 'unset'
     }
   });
+}
+
+
+// handle sidebar employers grid fullwidth
+const hasScrollbar = document.body.scrollHeight > window.innerHeight;
+
+if (hasScrollbar && document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth')) {
+  document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth').style.height = '100%'
+  console.log('true');
+} else {
+  document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth').style.height = 'calc(100vh - 80px)'
 }

@@ -206,7 +206,7 @@ padding-left: 33px;
 
 .nice-select .option.selected {
     font-weight: bold;
-    color: #14A077;
+    color: var(--purple);
 }
 
 .nice-select .option.disabled {

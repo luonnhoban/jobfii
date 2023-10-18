@@ -56,7 +56,7 @@
 }
 
 .dashboard a:hover {
-    color: #14a077;
+    color: #6728D0;
 }
 
 .dashboard .color-1 {
@@ -68,7 +68,7 @@
 }
 
 .dashboard .color-3 {
-    color: #14a077 !important;
+    color: #6728D0 !important;
 }
 
 .dashboard .color-4 {
@@ -215,7 +215,7 @@
     content: "";
     width: 8px;
     height: 32px;
-    background-color: #14a077;
+    background-color: #6728D0;
     margin-right: 8px;
     display: inline-block;
     border-radius: 100px;
@@ -235,7 +235,7 @@
 
 .page-title-dashboard.style .tt-button a {
     padding: 11px 32px;
-    background: #14a077;
+    background: #6728D0;
     color: #fff;
 }
 
@@ -341,7 +341,7 @@
 
 .flat-dashboard-dyagram .box-notifications .noti-icon span::before {
     font-size: 20px;
-    color: #14a077;
+    color: #6728D0;
 }
 
 .flat-dashboard-dyagram .box-notifications h3 {
@@ -461,7 +461,7 @@ tbody tr td:nth-child(2) {
 
 .flat-dashboard-applicants .applicants .content .button-now a {
     background-color: #1481601a;
-    color: #14a077;
+    color: #6728D0;
     padding: 4px 12px 4px 12px;
     border-radius: 24px;
     font-size: 12px;
@@ -470,7 +470,7 @@ tbody tr td:nth-child(2) {
 }
 
 .flat-dashboard-applicants .applicants .content .button-now a:hover {
-    background-color: #14a077;
+    background-color: #6728D0;
     color: #fff;
 }
 
@@ -596,7 +596,7 @@ tbody tr td:nth-child(2) {
 }
 
 .dashboard .button-cancel {
-    border: 1px solid #14a077;
+    border: 1px solid #6728D0;
     background-color: #fff;
     padding: 6px 19px;
     border-radius: 4px;
@@ -604,7 +604,7 @@ tbody tr td:nth-child(2) {
 }
 
 .dashboard .button-cancel:hover {
-    background-color: #14a077;
+    background-color: #6728D0;
     color: #fff;
 }
 
@@ -647,8 +647,8 @@ tbody tr td:nth-child(2) {
 .dashboard button.active {
     color: #fff;
     background: rgba(20, 160, 119, 1);
-    border: 1px solid #14a077;
-    border-bottom: 2px solid #14a077;
+    border: 1px solid #6728D0;
+    border-bottom: 2px solid #6728D0;
 }
 
 .dashboard button:focus {
@@ -847,7 +847,7 @@ tbody tr td:nth-child(2) {
 }
 
 #sidebar-menu ul li ul.sub-menu2 li a.acti {
-    color: #14a077;
+    color: #6728D0;
     background-color: #fff;
 }
 
@@ -859,17 +859,17 @@ tbody tr td:nth-child(2) {
 
 .show-job #sidebar-menu ul li a.active,
 .show-job #sidebar-menu ul li a:hover {
-    color: #14a077;
+    color: #6728D0;
     background-color: #fff;
 }
 
 #sidebar-menu ul li ul.sub-menu2 li a:hover {
     background-color: #f5f5f2;
-    color: #14a077 !important;
+    color: #6728D0 !important;
 }
 
 #sidebar-menu ul li ul.sub-menu2 li a:hover::before {
-    background-color: #14a077;
+    background-color: #6728D0;
 }
 
 .show-job #sidebar-menu ul li a:hover {
@@ -885,7 +885,7 @@ tbody tr td:nth-child(2) {
 }
 
 .show-job .left-menu #sidebar-menu>ul>li:hover>a span {
-    color: #14a077;
+    color: #6728D0;
 }
 
 .show-job .left-menu {
@@ -1004,18 +1004,18 @@ tbody tr td:nth-child(2) {
 
 #sidebar-menu ul li ul.sub-menu2 li.ff-active a {
     background: #f5f5f2;
-    color: #14a077;
+    color: #6728D0;
 }
 
 #sidebar-menu ul li ul.sub-menu2 li.ff-active a::before {
-    background-color: #14a077;
+    background-color: #6728D0;
 }
 
 #sidebar-menu ul .ff-active a .dash-icon::before,
 #sidebar-menu ul .ff-active a .dash-icon,
 #sidebar-menu ul li a:hover .dash-icon::before,
 #sidebar-menu ul li a:hover .dash-icon {
-    color: #14a077;
+    color: #6728D0;
 }
 
 #sidebar-menu ul li a .dash-icon::before,
@@ -1087,7 +1087,7 @@ tbody tr td:nth-child(2) {
 
 .dashboard .tt-button a {
     padding: 11px 47px;
-    border: 1px solid #14a077;
+    border: 1px solid #6728D0;
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -1096,7 +1096,7 @@ tbody tr td:nth-child(2) {
 }
 
 .dashboard .tt-button a.btn-3 {
-    background: #14a077;
+    background: #6728D0;
     color: #fff;
 }
 
@@ -1144,7 +1144,7 @@ tbody tr td:nth-child(2) {
 }
 
 .flat-dashboard-about .sidebar-map .box-icon a:hover {
-    background: #14a077;
+    background: #6728D0;
     color: #fff;
 }
 
@@ -1216,7 +1216,7 @@ tbody tr td:nth-child(2) {
 }
 
 .flat-dashboard-about .profile-wrap .button-wrap a:hover {
-    background-color: #14a077;
+    background-color: #6728D0;
     color: #fff;
 }
 
@@ -1468,7 +1468,7 @@ tbody tr td:nth-child(2) {
 .dashboard .dropdown li.active,
 .dashboard .dropdown ul,
 .dashboard .dropdown li:hover {
-    background: #14a077;
+    background: #6728D0;
     color: #fff;
 }
 
@@ -1692,7 +1692,7 @@ tbody tr td:nth-child(2) {
 
 .info-wd .input-form2:focus,
 .info-wd .input-form:focus {
-    border: 1px solid #14a077;
+    border: 1px solid #6728D0;
 }
 
 .info-wd .input-form2::placeholder {
@@ -1769,7 +1769,7 @@ tbody tr td:nth-child(2) {
 }
 
 .dashboard .tag-area.active {
-    border: 1px solid #14a077 !important;
+    border: 1px solid #6728D0 !important;
 }
 
 .dashboard .tag-area ul {
@@ -1873,7 +1873,7 @@ tbody tr td:nth-child(2) {
 }
 
 .dashboard .my-text-btn:hover {
-    color: #14a077;
+    color: #6728D0;
 }
 
 .dashboard .floating-button {
@@ -2079,7 +2079,7 @@ tbody tr td:nth-child(2) {
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #14a077;
+    border: 1px solid #6728D0;
 }
 
 .member-button a h4::before {
@@ -2240,7 +2240,7 @@ tbody tr td:nth-child(2) {
 }
 
 .flat-dashboard-submit .package-wrap .box:hover {
-    border: 1px solid #14a077;
+    border: 1px solid #6728D0;
 }
 
 .flat-dashboard-submit .package-wrap .box h4 {
@@ -2262,7 +2262,7 @@ input[type="radio"]:checked:after {
     height: 14px;
     border-radius: 20px;
     position: absolute;
-    background-color: #14a077;
+    background-color: #6728D0;
     content: "";
 }
 
@@ -2283,13 +2283,13 @@ input[type="radio"]:checked:after {
 
 .flat-dashboard-month .wrap-month:hover,
 .flat-dashboard-month .wrap-month.active {
-    border: 1px solid #14a077;
+    border: 1px solid #6728D0;
     box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
 }
 
 .flat-dashboard-month .wrap-month:hover .tt-button a,
 .flat-dashboard-month .wrap-month.active .tt-button a {
-    background: #14a077;
+    background: #6728D0;
     color: #fff;
 }
 
@@ -2328,7 +2328,7 @@ input[type="radio"]:checked:after {
     font-size: 11px;
     width: 20px;
     height: 20px;
-    background-color: #14a077;
+    background-color: #6728D0;
     padding: 5px;
     border-radius: 50%;
     color: #fff;
@@ -2353,7 +2353,7 @@ input[type="radio"]:checked:after {
 }
 
 .flat-dashboard-month .wrap-month .sub-titles a {
-    background-color: #14a077;
+    background-color: #6728D0;
     font-size: 10px;
     color: #fff;
     text-transform: uppercase;
@@ -2623,7 +2623,7 @@ input[type="radio"]:checked:after {
 .flat-dashboard-meetings .dec-box .title-dec {
     width: 76px;
     height: 28px;
-    background-color: #14a077;
+    background-color: #6728D0;
     color: #fff;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
@@ -3170,7 +3170,7 @@ input[type="radio"]:checked:after {
 }
 
 .flat-dashboard-following .button-cancel.btn-3 {
-    background: #14a077;
+    background: #6728D0;
     color: #fff;
 }
 
@@ -3290,7 +3290,7 @@ input[type="radio"]:checked:after {
 }
 
 .flat-dashboard-messages .status-icon.online {
-    background-color: #14a077;
+    background-color: #6728D0;
 }
 
 .flat-dashboard-messages .status-icon.offline {
@@ -3489,7 +3489,7 @@ input[type="radio"]:checked:after {
 }
 
 .flat-dashboard-messages .right .write .icon-send {
-    background-color: #14a077;
+    background-color: #6728D0;
     color: #fff;
     width: 50px;
     height: 50px;
@@ -3541,7 +3541,7 @@ input[type="radio"]:checked:after {
 .flat-dashboard-messages .right .bubble.you {
     float: right;
     color: #fff;
-    background-color: #14a077;
+    background-color: #6728D0;
     align-self: flex-end;
     -webkit-animation-name: slideFromRight;
     animation-name: slideFromRight;

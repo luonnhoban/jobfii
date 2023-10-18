@@ -311,13 +311,13 @@ var options = {
   annotations: {
     yaxis: [{
       y: 30,
-      borderColor: '#14A077',
+      borderColor: '#6728D0',
       label: {
         show: true,
         text: 'Support',
         style: {
           color: "#fff",
-          background: '#14A077'
+          background: '#6728D0'
         }
       }
     }],
@@ -330,7 +330,7 @@ var options = {
         text: 'Rally',
         style: {
           color: "#fff",
-          background: '#14A077'
+          background: '#6728D0'
         }
       }
     }]

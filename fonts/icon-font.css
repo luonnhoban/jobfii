@@ -62,12 +62,12 @@
 
 .icon-file-doc:before {
   content: "\e90a";
-  color: #14a077;
+  color: #6728D0;
 }
 
 .icon-file-pdf:before {
   content: "\e90b";
-  color: #14a077;
+  color: #6728D0;
 }
 
 .icon-wishlist .path1:before {
@@ -156,7 +156,7 @@
 
 .icon-logo--abstract:before {
   content: "\e915";
-  color: #14a077;
+  color: #6728D0;
 }
 
 .icon-logo--aftereffects .path1:before {
@@ -234,12 +234,12 @@
 
 .icon-logo--jira:before {
   content: "\e923";
-  color: #14a077;
+  color: #6728D0;
 }
 
 .icon-logo--magento:before {
   content: "\e924";
-  color: #14a077;
+  color: #6728D0;
 }
 
 .icon-logo--premiere .path1:before {
@@ -255,7 +255,7 @@
 
 .icon-logo--principle:before {
   content: "\e927";
-  color: #14a077;
+  color: #6728D0;
 }
 
 .icon-logo--protopie .path1:before {

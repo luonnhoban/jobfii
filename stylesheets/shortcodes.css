@@ -803,7 +803,6 @@
 
 .wd-list-icon li {
   font-size: 20px;
-  margin-bottom: 21px;
 }
 
 .wd-list-icon li:last-child {
@@ -2141,10 +2140,6 @@
 .wd-review-job.sl7 .thumb3 .group-thumb>img {
   position: relative;
   z-index: 1;
-}
-
-.category-icon-block .group-icon {
-  
 }
 
 .sl-icon-box {
@@ -3772,12 +3767,22 @@
 
 .group-half-map .content-left {
   position: relative;
-  width: 41.3%;
-  padding: 34px 40px 0px 40px;
+  width: 30%;
+  padding: 24px;
 }
 
 .group-half-map .content-right {
-  width: 58.7%;
+  width: 70%;
+}
+
+@media (max-width: 1840px) and (min-width: 1401px) {
+  .group-half-map .content-left {
+    width: 40%;
+  }
+
+  .group-half-map .content-right {
+    width: 60%;
+  }
 }
 
 .wd-findjob-filer {
@@ -3876,8 +3881,8 @@
 
 .nofi-job {
   font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 14px;
+  line-height: 22px;
   color: #64666c;
   margin-bottom: 19px;
 }
@@ -3921,9 +3926,13 @@
 }
 
 .pagination-job.absolute {
-  background: #ffffff;
-  box-shadow: 0px 5px 18px 5px rgba(64, 72, 87, 0.074);
-  padding: 20px 0px;
+  /* background: #ffffff;
+  box-shadow: 0px 5px 18px 5px rgba(64, 72, 87, 0.074); */
+  padding: 12px 0px;
+}
+
+.employer-sidebar.pagination-job.absolute {
+  margin-top: 20px;
 }
 
 .group-half-map .content-job .features-job .box-content ul {
@@ -4592,14 +4601,13 @@
   margin-right: -10px;
 }
 
+.employers-grid-fullwidth-section .group-col-3 .row {
+  width: calc(100% + 20px);
+}
+
 .group-col-3 .row>div {
   padding-left: 10px;
   padding-right: 10px;
-}
-
-.group-col-3 .cl4 {
-  /* width: calc(25% - 20px);
-  margin-left: 20px; */
 }
 
 .group-col-2 {
@@ -4645,7 +4653,7 @@
 }
 
 .widget-filter.st2 {
-  padding: 18px 24px 24px 24px;
+  padding: 24px;
 }
 
 /* single job */
@@ -4692,7 +4700,7 @@
 }
 
 .wd-job-author2 {
-  padding: 40px 40px 30px 40px;
+  padding: 40px 40px 28px 40px;
   border-bottom: 1px solid #e5e5e5;
   display: flex;
   justify-content: space-between;
@@ -5795,12 +5803,14 @@
   border-radius: 8px;
   padding: 24px 24px 24px 24px;
   text-align: left;
+  position: relative;
+  height: 100%;
 }
 
 .pricing-box .group-tag {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 15px;
+  margin-bottom: 8px;
 }
 
 .pricing-box .group-tag .tag1 {
@@ -5822,13 +5832,16 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #ffffff;
-  padding: 0px 6px;
+  padding: 4px 6px;
   background: #6728D0;
   border-radius: 4px;
-  height: 21px;
-  line-height: 21px;
+  line-height: normal;
   opacity: 0;
   visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -5843,12 +5856,12 @@
 }
 
 .pricing-box .pricing {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 30px;
   line-height: 42px;
   text-transform: capitalize;
   color: #121212;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
@@ -5862,19 +5875,24 @@
 }
 
 .pricing-box .wd-list-icon li {
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  text-transform: capitalize;
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
 }
 
 .pricing-box .wd-list-icon li .icon {
-  margin-right: 9px;
-}
-
-.pricing-box .wd-list-icon li {
-  margin-bottom: 19px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pricing-box .wd-list-icon {
-  margin-bottom: 33px;
+  margin-bottom: calc(50px + 20px);
 }
 
 .pricing-box .btn {
@@ -5887,7 +5905,10 @@
   line-height: 26px;
   text-transform: capitalize;
   color: #121212;
-  width: 100%;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
 }
 
 .pricing-box.active .btn,
@@ -6743,11 +6764,12 @@
 }
 
 .group-half-map .content-left.stc {
-  padding: 31px 49px 0px 47px;
+  padding: 24px;
 }
 
 .group-half-map .content-left.stc .content-job .features-job {
-  padding: 24px 23px 24px 24px;
+  padding: 16px;
+  margin-bottom: 16px;
 }
 
 .group-half-map .content-left.stc .wd-thum-career .thumb {
@@ -6771,13 +6793,12 @@
   text-align: center;
 }
 
-.group-half-map .content-left.stc .wd-thum-career .job-archive-footer {
-  margin-top: 15px;
+.group-half-map .content-left.stc .tf-btn:hover {
+  color: var(--white);
 }
 
-.group-half-map .content-left.stc .content-job .features-job {
-  padding: 24px 23px 27px 24px;
-  margin-bottom: 16px;
+.group-half-map .content-left.stc .wd-thum-career .job-archive-footer {
+  margin-top: 15px;
 }
 
 .job-article.single-job .menu-tab.stc {
@@ -8695,9 +8716,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .employer-block {
-  margin-bottom: 32px;
+  margin-bottom: 12px;
   border: 1px solid #e5e5e5;
-  padding: 24px;
+  padding: 12px 24px;
   border-radius: 8px;
   transition: all 0.3s ease-in-out;
   position: relative;
@@ -8711,12 +8732,11 @@ input[type="number"]::-webkit-inner-spin-button {
 .employer-block .inner-box {
   display: flex;
   align-items: center;
-  margin-top: -10px;
 }
 
 .employer-block .inner-box .logo-company {
-  max-width: 60px;
-  height: 60px;
+  max-width: 40px;
+  height: 40px;
   margin: 5px 16px 5px 0.5px;
 }
 
@@ -8731,9 +8751,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .employer-block .box-content h3 a {
   transition: all 0.5s ease-in-out;
-
   font-weight: 700;
   color: #121212;
+  padding-right: 6px;
 }
 
 .employer-block .box-content h3 a:hover {
@@ -8765,7 +8785,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .employer-block.style-2 {
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
 .employer-block.style-3 {
@@ -8783,12 +8803,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .employer-block.style-2 .inner-box .button-readmore span {
-  margin-right: 16px;
+  margin-right: 12px;
   height: 40px;
   border-radius: 1000px;
   padding: 12px;
   color: #e5e5e5;
-  font-size: 17.42px;
+  font-size: 14px;
   border: 1px solid #e5e5e5;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -9484,7 +9504,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   background: #fff;
   padding: 40px 40px 28px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -9710,11 +9730,19 @@ input[type="number"]::-webkit-inner-spin-button {
   .group-col-3 .row>div {
     width: 33.3333333%;
   }
+
+  .content-tab.employer-sidebar .group-col-3 .row>div {
+    width: 50%;
+  }
 }
 
 @media (max-width: 1400px) {
   .group-col-3 .row>div {
     width: 50%;
+  }
+
+  .content-tab.employer-sidebar .group-col-3 .row>div {
+    width: 100%;
   }
 }
 
@@ -9722,6 +9750,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .wrap-sidebar-full .widget-filter {
     padding: 16px 12px 16px 24px;
   }
+
   .wrap-sidebar-full .col-xxl-2 {
     padding-right: 0;
   }
@@ -9796,6 +9825,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .content-tab.padding .employer-block.style-3 {
   margin-bottom: 28px;
+}
+
+.employer-sidebar .inner .row .employer-block {
+  margin-bottom: 0;
 }
 
 .tf-container.ct1 {
@@ -10716,7 +10749,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .pricing-section-three,
 .shop-section {
   padding-bottom: 60px;
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 .candidate-section-two {
@@ -10852,25 +10885,30 @@ input[type="number"]::-webkit-inner-spin-button {
   padding-top: 60px;
 }
 
-.salary-slider-one {
+.salary-slider-one,
+.age-slider-one {
   position: relative;
 }
 
-.salary-slider-one .ui-widget.ui-widget-content {
+.salary-slider-one .ui-widget.ui-widget-content,
+.age-slider-one .ui-widget.ui-widget-content {
   height: 5px;
   border: none;
   border-radius: 30px;
   background: #d3d3d3;
 }
 
-.salary-slider-one .ui-slider .ui-slider-range {
+.salary-slider-one .ui-slider .ui-slider-range,
+.age-slider-one .ui-slider .ui-slider-range {
   top: 0px;
   height: 5px;
   background: #6728D0;
 }
 
 .salary-slider-one .ui-state-default,
-.salary-slider-one .ui-widget-content .ui-state-default {
+.salary-slider-one .ui-widget-content .ui-state-default,
+.age-slider-one .ui-state-default,
+.age-slider-one .ui-widget-content .ui-state-default {
   position: absolute;
   top: -10px;
   height: 24px;
@@ -10882,13 +10920,15 @@ input[type="number"]::-webkit-inner-spin-button {
   cursor: pointer;
 }
 
-.salary-slider-one .input-outer {
+.salary-slider-one .input-outer,
+.age-slider-one .input-outer {
   display: flex;
   align-items: center;
   margin-bottom: 35px;
 }
 
-.filter-block .salary-slider-one label {
+.filter-block .salary-slider-one label,
+.filter-block .age-slider-one label {
   font-weight: 700;
   color: #121212;
   font-size: 16px;
@@ -10896,7 +10936,8 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-right: 5px;
 }
 
-.salary-slider-one .salary-outer {
+.salary-slider-one .salary-outer,
+.age-slider-one .age-outer {
   position: relative;
   font-weight: 700;
   font-size: 16px;
