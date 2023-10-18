@@ -3815,7 +3815,7 @@
 
 .wd-findjob-filer .group-select .nice-select {
   padding: 12px 16px;
-  background: #f1f1f1;
+  background: var(--surface);
   border-radius: 4px;
   padding-right: 57px;
 }
@@ -4515,8 +4515,8 @@
 }
 
 .group-select-display .btn-display {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   border: 1px solid #e5e5e5;
   display: inline-flex;
   align-items: center;
@@ -5805,6 +5805,12 @@
   text-align: left;
   position: relative;
   height: 100%;
+  transition: all ease 0.3s;
+}
+
+.pricing-box:hover {
+  border-color: var(--purple);
+  cursor: pointer;
 }
 
 .pricing-box .group-tag {
@@ -9195,12 +9201,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .wd-thum-career .job-archive-header .career-info li:first-child {
   padding: 7px 12px;
-  background: rgba(20, 129, 96, 0.1);
+  background: rgba(55, 184, 83, 0.10);
   border-radius: 24px;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;
-  color: #6728D0;
+  color: var(--green);
   margin-right: 12px;
 }
 
@@ -9222,7 +9228,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .wd-thum-career .career-tag li a {
-  background-color: #f1f1f1;
+  background-color: var(--surface);
   padding: 8px 12px;
   border-radius: 24px;
   font-weight: 500;
@@ -9726,8 +9732,10 @@ input[type="number"]::-webkit-inner-spin-button {
     flex: 0 0 auto;
     width: 75%;
   }
+}
 
-  .group-col-3 .row>div {
+@media (max-width: 1740px) and (min-width: 1401px) {
+  .group-col-3.fullwidth .row>div {
     width: 33.3333333%;
   }
 
@@ -9737,7 +9745,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1400px) {
-  .group-col-3 .row>div {
+  .group-col-3.fullwidth .row>div {
     width: 50%;
   }
 
@@ -10744,8 +10752,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .inner-jobs-section,
-.inner-employer-section,
-.candidates-section,
+/* .inner-employer-section, */
+/* .candidates-section, */
 .pricing-section-three,
 .shop-section {
   padding-bottom: 60px;
