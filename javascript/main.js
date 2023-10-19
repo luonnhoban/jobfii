@@ -1128,7 +1128,29 @@ const hasScrollbar = document.body.scrollHeight > window.innerHeight;
 
 if (hasScrollbar && document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth')) {
   document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth').style.height = '100%'
-  console.log('true');
+  console.log(true);
 } else {
-  document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth').style.height = 'calc(100vh - 80px)'
+  if(document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth')) {
+    document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth').style.height = 'calc(100vh - 80px)'
+  }
 }
+
+
+// like, unlike heart icon
+const likeBlocks = document.querySelectorAll('.icon-heart')
+
+if (likeBlocks) {
+    likeBlocks.forEach(likeBlock => {
+        likeBlock.addEventListener('click', (e) => {
+            e.preventDefault()
+            if (likeBlock.classList.contains('liked')) {
+                likeBlock.style.color = '#E5E5E5'
+            } else {
+                likeBlock.style.color = '#eb4d4d'
+            }
+
+            likeBlock.classList.toggle('liked')
+        })
+    })
+}
+

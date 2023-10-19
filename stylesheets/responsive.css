@@ -24,7 +24,7 @@
   }
 
   .group-half-map.style2 .content-left .inner.st-job {
-    margin-right: 24px;
+    margin-right: 12px;
   }
 
   .group-half-map.style2 .content-right iframe {
@@ -588,6 +588,19 @@
   .landing-footer .content .inner p {
     padding: 0;
   }
+  .footer .inner-footer {
+    padding: 20px 0 32px;
+  }
+}
+
+@media (max-width: 1199.99px) and (min-width: 768px) {
+  .footer .inner-footer .list-link-footer .row {
+    justify-content: space-between;
+  }
+
+  .footer .inner-footer .list-link-footer .row>div:first-child .row>div {
+    width: auto;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
@@ -676,7 +689,11 @@
 
   .wd-social .list-social li,
   .tf-slider .form-sl .row-group-search.home1 .form-group-2 {
-    margin-bottom: 15px;
+    margin-bottom: 16px;
+  }
+
+  .main-content.border-bottom.pb-20 {
+    padding-bottom: 0;
   }
 
   .group-half-map.style2 .content-left {
@@ -685,6 +702,10 @@
 
   .group-half-map.style2 .content-left .inner {
     padding: 15px;
+  }
+
+  .group-half-map.style2 .content-left .inner.list-tab {
+    padding: 0;
   }
 
   .group-half-map.style2 .content-left .inner.menu-tab {
@@ -1217,18 +1238,18 @@
     margin-top: 40px;
   }
 
-  .footer-cl-1,
+  /* .footer-cl-1, */
   .form-stc,
   .group-half-map.st1 .wd-findjob-filer .group-select {
     margin-right: 0;
   }
 
-  .footer-cl-3,
+  /* .footer-cl-3, */
   .shop-content.margin.content-stc {
     margin-left: 0;
   }
 
-  .footer-cl-1,
+  /* .footer-cl-1,
   .footer-cl-2,
   .footer-cl-3,
   .footer-cl-4,
@@ -1239,7 +1260,7 @@
 
   .footer-cl-2 {
     margin-left: 30%;
-  }
+  } */
 
   .footer .bt-left .copyright {
     margin-right: 20px;
@@ -1803,7 +1824,21 @@
     padding: 80px 0px 50p;
   }
 
+  .footer .inner-footer .list-link-footer>.row>div:last-child .justify-content-end {
+    justify-content: flex-start !important;
+  }
+}
 
+@media only screen and (max-width: 767.99px) and (min-width: 576px) {
+  .footer .inner-footer .list-link-footer .row {
+    position: relative;
+  }
+
+  .footer .inner-footer .list-link-footer>.row>div:last-child {
+    position: absolute;
+    bottom: 8px;
+    right: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1985,6 +2020,7 @@
   #header .sticky-area-wrap .header-ct-right .bell .sub-notification {
     left: -175px;
     width: 285px;
+    top: 49px;
   }
 
   #header.header-style2 .sticky-area-wrap .header-ct-right .bell .sub-notification {
@@ -2495,8 +2531,6 @@
   .group-col-4 .cl4 {
     width: calc(100% - 32px);
   }
-
-
 }
 
 @media only screen and (max-width: 480px) {
@@ -2536,5 +2570,9 @@
 @media (max-width: 420px) {
   .sticky-area-wrap .header-ct-right .help {
     display: none;
+  }
+
+  .footer .inner-footer .pr-80 {
+    padding-right: 0;
   }
 }
