@@ -1043,7 +1043,7 @@ $('.list-news.list-4-col').slick({
 });
 
 
-/* List News
+/* List Partner
 ------------------------------------------------------------------------------------- */
 
 $('.list-partner').slick({
@@ -1103,6 +1103,43 @@ $('.list-partner').slick({
   ]
 });
 
+
+/* List Thumb Detail
+  ------------------------------------------------------------------------------------- */
+
+  $('.list-thumb').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: '.prev-arrow',
+    nextArrow: '.next-arrow',
+    dots: false,
+    touchThreshold: 1000,
+    swipe: true,
+    swipeToSlide: true,
+    centerMode: false,
+    pauseOnFocus: false,
+    pauseOnHover: false,
+    pauseOnDotsHover: false,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 576,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
+  });
+
 // Remove position sticky form-sticky apply job in detail page
 // Get formSticky and list partners
 const formSticky = document.querySelector('.form-sticky');
@@ -1144,12 +1181,12 @@ if (likeBlocks) {
         likeBlock.addEventListener('click', (e) => {
             e.preventDefault()
             if (likeBlock.classList.contains('liked')) {
-                likeBlock.style.color = '#E5E5E5'
+                likeBlock.classList.remove('liked')
             } else {
-                likeBlock.style.color = '#eb4d4d'
+                likeBlock.classList.add('liked')
             }
 
-            likeBlock.classList.toggle('liked')
+            // likeBlock.classList.toggle('liked')
         })
     })
 }

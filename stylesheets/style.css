@@ -284,8 +284,7 @@ a {
   transition: all 0.3s ease-in-out;
 }
 
-a:hover,
-a:focus {
+a:hover {
   color: #6728D0;
   text-decoration: none;
   outline: 0;
@@ -1955,6 +1954,7 @@ input[type="color"],
   line-height: 24px;
   color: #121212;
   margin-right: 17px;
+  white-space: nowrap;
 }
 
 .footer .top-ft {

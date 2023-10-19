@@ -65,7 +65,7 @@
 /* widget menu link */
 .widget-menu-link {
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: var(--surface);
 }
 
 .widget-menu-link ul {
@@ -243,7 +243,7 @@
 }
 
 .widget-block-search-2 {
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 8px;
   border: none;
   margin-bottom: 40px;
@@ -2881,7 +2881,7 @@
 }
 
 .wd-cv-item .item-group .content-left {
-  background: #f5f5f5;
+  background: var(--surface);
   padding: 80px 80px 70px 58px;
   position: relative;
 }
@@ -3117,7 +3117,7 @@
 }
 
 .cv-form-details {
-  background: #f5f5f5;
+  background: var(--surface);
   box-shadow: 0px 2px 2px rgba(28, 36, 51, 0.1);
   border-radius: 8px;
   padding: 24px 24px 24px 24px;
@@ -3315,7 +3315,7 @@
 }
 
 .cv-form-details .wd-social ul li a {
-  background: #e5e5e5;
+  background: var(--white);
 }
 
 .cv-form-details .wd-social ul li a:hover {
@@ -3351,7 +3351,7 @@
 
 .wd-cv-template .content .list-category li a {
   padding: 8px 16px;
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 52px;
   font-size: 12px;
   line-height: 16px;
@@ -4044,6 +4044,7 @@
 }
 
 @media (max-width: 1599.99px) {
+
   .scroll-max-1600 .sidebar-scroll,
   .scroll-max-1600 .list-content-scroll {
     overflow-x: unset;
@@ -4236,7 +4237,7 @@
 
 .wd-popup-form .content .content-right input[type="text"] {
   padding: 12px 16px;
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 4px;
   font-size: 16px;
   line-height: 26px;
@@ -4406,7 +4407,7 @@
 }
 
 .wd-popup-job-apply .content textarea {
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 4px;
   padding: 12px 16px;
   font-size: 16px;
@@ -4438,7 +4439,7 @@
 }
 
 .wd-popup-job-apply .group-form .inner .nice-select {
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 4px;
   padding: 15px 16px;
 }
@@ -4451,7 +4452,7 @@
 .wd-popup-job-apply.style3 textarea,
 .wd-popup-job-apply.style3 input[type="date"],
 .wd-popup-job-apply.style3 input[type="text"] {
-  background: #f5f5f5;
+  background: var(--surface);
   border-color: transparent;
   height: 56px;
 }
@@ -5229,7 +5230,7 @@
 .form-candidate .ip input,
 .form-candidate .ip textarea {
   padding: 15px 16px;
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 4px;
   border-color: transparent;
   font-weight: 400;
@@ -5482,7 +5483,7 @@
 }
 
 .wd-form-login .nofi-form {
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 8px;
   padding: 12px 16px;
   text-align: left;
@@ -6076,7 +6077,7 @@
 }
 
 .pricing-table tr:nth-child(odd) {
-  background: #f5f5f5;
+  background: var(--surface);
 }
 
 .pricing-table tr:nth-child(even) {
@@ -6148,7 +6149,7 @@
 /* shop */
 
 .shop-details .shop-thumb {
-  background: #f5f5f5;
+  background: var(--surface);
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   display: inline-flex;
@@ -6524,7 +6525,7 @@
   max-width: 100px;
   height: 36px;
   overflow: hidden;
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 4px;
   width: 20%;
   margin-right: -36px;
@@ -6642,7 +6643,7 @@
 
 .shopping-cart .view-cart {
   padding: 24px;
-  background: #f5f5f5;
+  background: var(--surface);
   border-radius: 8px;
 }
 
@@ -6952,7 +6953,9 @@
   margin-bottom: -22px;
 }
 
-.icon-heart:hover {
+.icon-heart:hover,
+.icon-heart.liked,
+.icon-heart:focus {
   color: #eb4d4d;
 }
 
@@ -7233,14 +7236,56 @@
   transform: translate(-50%, -50%);
 }
 
+.list-thumb-block {
+  overflow: hidden;
+  position: relative;
+}
+
+.prev-arrow,
+.next-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.7);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all ease 0.3s;
+}
+
+.prev-arrow:hover,
+.next-arrow:hover {
+  background: var(--purple);
+  color: var(--white);
+}
+
+.prev-arrow i,
+.next-arrow i {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.prev-arrow {
+  left: 20px;
+}
+
+.next-arrow {
+  right: 20px;
+}
+
 .video-thumb .thumb-menu {
   display: flex;
-  margin-left: -20px;
+  /* margin-left: -20px; */
 }
 
 .video-thumb .thumb-menu li {
   width: calc(33.33333% - 20px);
-  margin-left: 20px;
+  /* margin-left: 20px; */
   cursor: pointer;
 }
 
@@ -8104,7 +8149,7 @@ h3 span.icon-bolt {
   height: 100%;
   margin-right: 32px;
   padding: 16px 24px;
-  background-color: #f5f5f5;
+  background-color: var(--surface);
   border-radius: 8px;
 }
 
@@ -8482,35 +8527,12 @@ input[type="number"]::-webkit-inner-spin-button {
   border: 1px solid var(--on-surface);
 }
 
-/* .group-category-job .item .blog-item {
-  background-color: var(--surface);
-}
-.group-category-job .item .blog-item .text-button-uppercase,
-.group-category-job .item .blog-item .heading6 {
-  color: var(--on-surface);
-}
-.group-category-job .item .blog-item .text-placehover {
-  color: var(--secondary);
-}
-.group-category-job .slick-dots li::after {
-  background-color: transparent;
-  border: 1px solid var(--on-surface);
-}
-.group-category-job .slick-dots li.slick-active {
-  border: 1px solid var(--on-surface);
-  background-color: var(--white);
-}
-.group-category-job .slick-dots li.slick-active::after {
-  background-color: var(--on-surface);
-  border: 1px solid var(--white);
-} */
-
 
 /* Banner Auto Scroll */
 .banner-auto-block .banner-auto-main {
   width: calc(333.44px * 8 + 38px * 8 + 40px * 14);
   overflow: hidden;
-  animation: scroll 10s linear infinite;
+  animation: scroll 15s linear infinite;
 }
 
 .banner-auto-block .banner-auto-main .heading6 {
@@ -9592,7 +9614,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .wd-form-rating .wrap-notes textarea {
   padding: 15px 16px;
   border-radius: 8px;
-  background: #f5f5f5;
+  background: var(--surface);
   border: hidden;
 }
 
@@ -10268,7 +10290,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .bg-checkout {
-  background-color: #f5f5f5;
+  background-color: var(--surface);
   border: 1px solid #e5e5e5;
   border-radius: 8px;
   padding: 24px;
@@ -11602,7 +11624,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .home-box-item.st2 {
   border-radius: 24px;
   padding: 24px 24px 28px;
-  background-color: #F5F5F5;
+  background-color: var(--surface);
   margin-left: 15px;
   margin-right: 15px;
   margin-bottom: 0;
