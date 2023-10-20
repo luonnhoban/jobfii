@@ -199,7 +199,7 @@
 
     $("#scroll-top").on("click", function (e) {
       e.preventDefault();
-      $("html, body").animate({ scrollTop: 0 }, 1000);
+      $("html, body").animate({ scrollTop: 0 }, 200);
     });
   };
   /* counter
@@ -778,8 +778,8 @@
   ------------------------------------------------------------------------------------- */
 
 document.addEventListener('DOMContentLoaded', function () {
-  if (document.querySelector('#banner .hot-news-block')) {
-    const newsItems = document.querySelectorAll('#banner .hot-news-block .hot-news-content p');
+  if (document.querySelector('.hot-news-block')) {
+    const newsItems = document.querySelectorAll('.hot-news-block .hot-news-content p');
     let currentIndex = 0;
 
     function updateNews() {
@@ -850,8 +850,8 @@ $('.job-category-slider').slick({
     {
       breakpoint: 576,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       }
     },
   ]
@@ -914,8 +914,8 @@ $('.list-7-col').slick({
     {
       breakpoint: 420,
       settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       }
     },
   ]
@@ -1043,6 +1043,31 @@ $('.list-news.list-4-col').slick({
 });
 
 
+// Set the height of the slick-slide to the height of the slick-list.
+// Lấy container cha của Slick Slider
+const slickSlider = document.querySelectorAll('.slick-track');
+
+
+// Đặt chiều cao cho các job-category-main
+window.onload = () => {
+  if (slickSlider) {
+    slickSlider.forEach(slider => {
+      console.log(slider);
+      // Lấy tất cả các job-category-main
+      const slickSlideItem = slider.querySelectorAll('.slick-slide');
+  
+      // Tính toán chiều cao cần thiết
+      const containerHeight = slider.offsetHeight;
+      const itemHeight = containerHeight; // Đặt chiều cao của item bằng container
+  
+      slickSlideItem.forEach(item => {
+        item.style.height = itemHeight + 'px';
+      });
+    })
+  }
+}
+
+
 /* List Partner
 ------------------------------------------------------------------------------------- */
 
@@ -1107,38 +1132,38 @@ $('.list-partner').slick({
 /* List Thumb Detail
   ------------------------------------------------------------------------------------- */
 
-  $('.list-thumb').slick({
-    infinite: true,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: true,
-    prevArrow: '.prev-arrow',
-    nextArrow: '.next-arrow',
-    dots: false,
-    touchThreshold: 1000,
-    swipe: true,
-    swipeToSlide: true,
-    centerMode: false,
-    pauseOnFocus: false,
-    pauseOnHover: false,
-    pauseOnDotsHover: false,
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-        }
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-        }
-      },
-    ]
-  });
+$('.list-thumb').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true,
+  prevArrow: '.prev-arrow',
+  nextArrow: '.next-arrow',
+  dots: false,
+  touchThreshold: 1000,
+  swipe: true,
+  swipeToSlide: true,
+  centerMode: false,
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  pauseOnDotsHover: false,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      }
+    },
+  ]
+});
 
 // Remove position sticky form-sticky apply job in detail page
 // Get formSticky and list partners
@@ -1151,7 +1176,7 @@ if (formSticky) {
   window.addEventListener('scroll', () => {
     const formStickyRect = formSticky.getBoundingClientRect();
     console.log(formStickyRect);
-    if(formStickyRect.top <= 79) {
+    if (formStickyRect.top <= 79) {
       formSticky.style.backgroundColor = '#FFFFFF'
     } else {
       formSticky.style.backgroundColor = 'unset'
@@ -1164,17 +1189,17 @@ if (formSticky) {
 const likeBlocks = document.querySelectorAll('.icon-heart')
 
 if (likeBlocks) {
-    likeBlocks.forEach(likeBlock => {
-        likeBlock.addEventListener('click', (e) => {
-            e.preventDefault()
-            if (likeBlock.classList.contains('liked')) {
-                likeBlock.classList.remove('liked')
-            } else {
-                likeBlock.classList.add('liked')
-            }
+  likeBlocks.forEach(likeBlock => {
+    likeBlock.addEventListener('click', (e) => {
+      e.preventDefault()
+      if (likeBlock.classList.contains('liked')) {
+        likeBlock.classList.remove('liked')
+      } else {
+        likeBlock.classList.add('liked')
+      }
 
-            // likeBlock.classList.toggle('liked')
-        })
+      // likeBlock.classList.toggle('liked')
     })
+  })
 }
 

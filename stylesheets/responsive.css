@@ -520,7 +520,7 @@
   }
 
   .get-app-sc {
-    padding: 80px 0;
+    padding: 60px 0;
   }
 
   .group-half-map.st1 .content-left {
@@ -588,6 +588,7 @@
   .landing-footer .content .inner p {
     padding: 0;
   }
+
   .footer .inner-footer {
     padding: 20px 0 32px;
   }
@@ -886,10 +887,6 @@
     left: 9px;
   }
 
-  .wd-get-app .group-btn img {
-    margin-bottom: 20px;
-  }
-
   .wd-iconbox .tf-iconbox {
     margin-bottom: 30px;
   }
@@ -1094,8 +1091,7 @@
   }
 
   .wd-counter,
-  .wd-iconbox .tf-iconbox,
-  .box-latest {
+  .wd-iconbox .tf-iconbox {
     margin-bottom: 30px;
   }
 
@@ -1136,10 +1132,18 @@
     padding-left: 30px;
   }
 
+  .bg-get-app .row {
+    flex-direction: column-reverse;
+  }
+
+  .get-app-sc {
+    padding: 40px 0 0;
+  }
+
   .wd-get-app .thumb {
     margin-left: 0%;
     text-align: center;
-    margin-bottom: 40px;
+    margin-top: 12px;
   }
 
   .tf-slider.sl6 .form-sl,
@@ -1534,7 +1538,7 @@
     margin-right: 20px;
   }
 
-  .tf-slider .form-sl .form-group-1,
+  .tf-slider .form-sl .form-group-1:nth-child(2),
   .wd-popup-job-apply .content .group-file .inner.left,
   .wd-popup-job-apply .content .group-seclect-file,
   .wd-popup-job-apply .content h6,
@@ -1828,15 +1832,24 @@
   }
 }
 
-@media only screen and (max-width: 767.99px) and (min-width: 576px) {
+@media only screen and (max-width: 767.99px) {
   .footer .inner-footer .list-link-footer .row {
     position: relative;
   }
 
   .footer .inner-footer .list-link-footer>.row>div:last-child {
     position: absolute;
-    bottom: 8px;
+    bottom: 9px;
     right: 0;
+  }
+
+  .navigation-menu-footer li span {
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 12px;
+    margin-left: 6px;
+    font-size: 10px;
+    line-height: 14px;
   }
 }
 
@@ -1970,6 +1983,29 @@
 }
 
 @media only screen and (max-width: 550px) {
+  #scroll-top {
+    width: 32px;
+    height: 32px;
+  }
+
+  .chat-bot-icon>div {
+    width: 36px;
+    height: 36px;
+    border-radius: 99px 99px 0 99px;
+    overflow: hidden;
+    z-index: 5;
+    cursor: pointer;
+  }
+
+  .chat-bot-icon>div .icon-chat::before {
+    font-size: 16px;
+    margin-left: 2px;
+  }
+
+  .chat-bot-icon>div p {
+    display: none;
+  }
+
   .wd-job-author .logo-company {
     margin-right: 20px;
   }
@@ -2128,7 +2164,7 @@
   }
 
   .get-app-sc {
-    padding: 60px 0;
+    padding: 24px 0 0;
   }
 
   .pricing-section {
@@ -2204,7 +2240,6 @@
   .job-search-form.st1 .row-group-search .form-group-2 .icon-map-pin,
   .job-search-form.st1 .row-group-search .form-group-3 .icon-filter,
   .job-search-form.style2 .form-group .icon,
-  .tf-slider .form-sl .row-group-search.home1.st .form-group-1 span,
   .tf-slider.sl9 .form-sl.stc .row-group-search.home1 span {
     font-size: 20px;
   }
@@ -2292,10 +2327,6 @@
   .tf-title {
     display: block;
     padding: 0;
-  }
-
-  .tf-title p {
-    margin-bottom: 10px;
   }
 
   .tf-title button {
@@ -2530,6 +2561,10 @@
   .group-col-4 .cl4 {
     width: calc(100% - 32px);
   }
+
+  .ft-title {
+    margin-bottom: 10px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2573,5 +2608,114 @@
 
   .footer .inner-footer .pr-80 {
     padding-right: 0;
+  }
+}
+
+
+/* Font Reduce */
+@media (max-width: 576px) {
+  .tf-title {
+    margin-bottom: 24px;
+  }
+
+  .tf-title h1 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 8px;
+  }
+
+  .tf-title p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 12px;
+  }
+
+  .tf-button {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .heading5 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    text-transform: capitalize;
+  }
+
+  .heading6 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    text-transform: capitalize;
+  }
+
+  .heading7 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: capitalize;
+  }
+
+  .pt-60 {
+    padding-top: 40px;
+  }
+
+  .pb-60 {
+    padding-bottom: 40px;
+  }
+
+  .pt-40 {
+    padding-top: 24px;
+  }
+
+  .pb-40 {
+    padding-bottom: 24px;
+  }
+
+  .mt-40 {
+    margin-top: 24px;
+  }
+
+  .p-32 {
+    padding: 20px;
+  }
+
+  .slick-slider:has(.slick-dots) {
+    .slick-list,
+    .list-locations .slick-track {
+      padding-bottom: 24px;
+    }
+  }
+
+  .slick-slider {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .slick-slide {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .tf-slider .tf-container .content .content-main {
+    border-radius: 16px;
+  }
+
+  .group-category-job .job-category-box {
+    padding: 16px;
+  }
+
+  .job-category-box h1 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .job-category-box .btn-category-job, .job-category-box p {
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .location-section-four, .job-category-section {
+    padding: 40px 0;
   }
 }

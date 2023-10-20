@@ -42,6 +42,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 
 a,
@@ -2040,6 +2041,11 @@ input[type="color"],
 /* .footer-cl-1 {
   margin-right: 25.4%;
 } */
+
+.navigation-menu-footer li {
+  display: flex;
+  align-items: center;
+}
 
 .navigation-menu-footer li:not(:last-child) {
   margin-bottom: 6px;
