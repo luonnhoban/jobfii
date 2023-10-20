@@ -1160,19 +1160,6 @@ if (formSticky) {
 }
 
 
-// handle sidebar employers grid fullwidth
-const hasScrollbar = document.body.scrollHeight > window.innerHeight;
-
-if (hasScrollbar && document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth')) {
-  document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth').style.height = '100%'
-  console.log(true);
-} else {
-  if(document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth')) {
-    document.querySelector('.wrap-sidebar-full .widget-filter.style-employer-fullwidth').style.height = 'calc(100vh - 80px)'
-  }
-}
-
-
 // like, unlike heart icon
 const likeBlocks = document.querySelectorAll('.icon-heart')
 

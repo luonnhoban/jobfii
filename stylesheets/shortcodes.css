@@ -3490,7 +3490,7 @@
 /* sidebar popup */
 
 .sidebar-popup .widget-filter {
-  width: 449px;
+  width: 338px;
 }
 
 .widget-filter {
@@ -4063,6 +4063,11 @@
     max-height: calc(100vh - 80px);
     height: calc(100vh - 80px);
   }
+
+  /* .sidebar-scroll.style-candidate {
+    max-height: 100vh;
+    height: 100%;
+  } */
 
   .sidebar-scroll::-webkit-scrollbar {
     width: 6px;
@@ -5128,6 +5133,12 @@
 
 .wrapper-author-page-title.style2 .author-archive-header {
   margin-bottom: 0px;
+}
+
+.wrapper-author-page-title.style2 .author-archive-header.candidate-img img {
+  border-radius: 50%;
+  width: 140px;
+  height: 140px;
 }
 
 .job-article .inner-content .group-infor {
@@ -6956,7 +6967,8 @@
 .icon-heart:hover,
 .icon-heart.liked,
 .icon-heart:focus {
-  color: #eb4d4d;
+  color: #eb4d4d !important;
+  transition: 0.3s;
 }
 
 /* .icon-heart.liked {
