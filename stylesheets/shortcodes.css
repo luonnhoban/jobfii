@@ -8541,6 +8541,10 @@ input[type="number"]::-webkit-inner-spin-button {
 
 
 /* Banner Auto Scroll */
+.banner-auto-block {
+  overflow: hidden;
+}
+
 .banner-auto-block .banner-auto-main {
   width: calc(333.44px * 8 + 38px * 8 + 40px * 14);
   overflow: hidden;
