@@ -2416,7 +2416,6 @@
 
 .cv-form-details.stc .preview-cv.mgt-32 {
   margin-top: 30px;
-  margin-bottom: 32px;
 }
 
 .wrapper-author-page-title.stc .tf-btn {
@@ -3225,7 +3224,6 @@
   border-radius: 8px;
   text-align: left;
   position: relative;
-  margin-bottom: 16px;
 }
 
 .cv-form-details .preview-cv.mgt-32 {
@@ -3266,6 +3264,10 @@
   text-transform: capitalize;
   font-weight: 700;
   text-align: center;
+}
+
+.cv-form-details .btn-dowload.bg-green {
+  background: var(--green);
 }
 
 .cv-form-details .btn-dowload i {
@@ -4718,8 +4720,7 @@
   border-color: #6728D0;
 }
 
-.group-select-display .menu-tab li .group-col-3,
-.group-col-3 {
+.group-select-display .menu-tab li .group-col-3 {
   display: flex;
   flex-wrap: wrap;
   /* margin-left: -20px; */
@@ -5945,6 +5946,7 @@
 
 .pricing-box:hover {
   border-color: var(--purple);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   cursor: pointer;
 }
 
@@ -5977,8 +5979,8 @@
   background: #6728D0;
   border-radius: 4px;
   line-height: normal;
-  opacity: 0;
-  visibility: hidden;
+  opacity: 1;
+  visibility: visible;
   position: absolute;
   top: 0;
   left: 50%;

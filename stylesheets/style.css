@@ -159,6 +159,10 @@ ul {
   list-style: none;
 }
 
+a, button {
+  cursor: pointer;
+}
+
 blockquote,
 q {
   -webkit-hyphens: none;

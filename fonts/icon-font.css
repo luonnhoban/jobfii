@@ -91,7 +91,7 @@
 .icon-review .path2:before {
   content: "\e9b5";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-application .path1:before {
@@ -156,12 +156,12 @@
 
 .icon-logo--abstract:before {
   content: "\e915";
-  color: #6728D0;
+  color: var(--on-surface);
 }
 
 .icon-logo--aftereffects .path1:before {
   content: "\e916";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--aftereffects .path2:before {
@@ -172,36 +172,36 @@
 
 .icon-logo--figma .path1:before {
   content: "\e918";
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--figma .path2:before {
   content: "\e919";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--figma .path3:before {
   content: "\e91a";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--figma .path4:before {
   content: "\e91b";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--figma .path5:before {
   content: "\e91c";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--illustrator .path1:before {
   content: "\e91d";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--illustrator .path2:before {
@@ -212,7 +212,7 @@
 
 .icon-logo--indesign .path1:before {
   content: "\e91f";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--indesign .path2:before {
@@ -223,7 +223,7 @@
 
 .icon-logo--invision .path1:before {
   content: "\e921";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--invision .path2:before {
@@ -234,17 +234,17 @@
 
 .icon-logo--jira:before {
   content: "\e923";
-  color: #6728D0;
+  color: var(--on-surface);
 }
 
 .icon-logo--magento:before {
   content: "\e924";
-  color: #6728D0;
+  color: var(--on-surface);
 }
 
 .icon-logo--premiere .path1:before {
   content: "\e925";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--premiere .path2:before {
@@ -255,7 +255,7 @@
 
 .icon-logo--principle:before {
   content: "\e927";
-  color: #6728D0;
+  color: var(--on-surface);
 }
 
 .icon-logo--protopie .path1:before {
@@ -266,18 +266,18 @@
 .icon-logo--protopie .path2:before {
   content: "\e929";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--protopie .path3:before {
   content: "\e92a";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--photoshop .path1:before {
   content: "\e92b";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--photoshop .path2:before {
@@ -288,7 +288,7 @@
 
 .icon-logo--salesforce .path1:before {
   content: "\e92d";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--salesforce .path2:before {
@@ -353,77 +353,77 @@
 
 .icon-logo--sketch .path1:before {
   content: "\e938";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--sketch .path2:before {
   content: "\e939";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--sketch .path3:before {
   content: "\e93a";
   margin-left: -1em;
-  color: rgb(20, 129, 96);
+  color: var(--secondary);
 }
 
 .icon-logo--sketch .path4:before {
   content: "\e93b";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--sketch .path5:before {
   content: "\e93c";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--sketch .path6:before {
   content: "\e93d";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--sketch .path7:before {
   content: "\e93e";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--sketch .path8:before {
   content: "\e93f";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--slack .path1:before {
   content: "\e940";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--slack .path2:before {
   content: "\e941";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--slack .path3:before {
   content: "\e942";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--slack .path4:before {
   content: "\e943";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--xd .path1:before {
   content: "\e944";
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--xd .path2:before {
@@ -440,49 +440,49 @@
 
 .icon-logo--zeplin .path1:before {
   content: "\e947";
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--zeplin .path2:before {
   content: "\e948";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--zeplin .path3:before {
   content: "\e949";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--zeplin .path4:before {
   content: "\e94a";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--zeplin .path5:before {
   content: "\e94b";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--zeplin .path6:before {
   content: "\e94c";
   margin-left: -1em;
-  color: rgb(0, 255, 187);
+  color: var(--secondary);
 }
 
 .icon-logo--zeplin .path7:before {
   content: "\e94d";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-logo--zeplin .path8:before {
   content: "\e94e";
   margin-left: -1em;
-  color: rgb(20, 160, 119);
+  color: var(--on-surface);
 }
 
 .icon-Delivery-Driver:before {

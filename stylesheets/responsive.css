@@ -451,7 +451,7 @@
   }
 
   .group-col-3 .cl3 {
-    width: calc(50% - 32px);
+    /* width: calc(50% - 32px); */
   }
 
   .blog-section .group-col-3 .cl3 {
@@ -937,7 +937,7 @@
 
   .group-col-3 .cl3,
   .group-col-2 .cl2 {
-    width: calc(100% - 32px);
+    /* width: calc(100% - 32px); */
   }
 
   .blog-section .group-col-3 .cl3 {
@@ -1619,7 +1619,7 @@
 
   .group-col-3 .cl3,
   .group-col-2 .cl2 {
-    width: calc(100% - 32px);
+    /* width: calc(100% - 32px); */
   }
 
   .wd-cv-item .content-right {

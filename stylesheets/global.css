@@ -179,6 +179,10 @@
     background-color: var(--purple);
 }
 
+.bg-green {
+    background-color: var(--green);
+}
+
 .bg-surface {
     background-color: var(--surface);
 }
