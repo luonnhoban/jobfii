@@ -200,7 +200,7 @@ display: block;
 padding-left: 33px;
 }
 .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
-    background-color: #f6f6f6;
+    background-color: var(--surface2);
     width: 100%;
 }
 

@@ -800,6 +800,52 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+/* Show dropdown in Search input
+  ------------------------------------------------------------------------------------- */
+
+const searchJobInput = document.querySelector('.form-search-job input');
+const dropdownJob = document.querySelector('.dropdown-job');
+
+if (searchJobInput) {
+  searchJobInput.addEventListener('keyup', function () {
+    const searchText = searchJobInput.value.trim();
+
+    // Kiểm tra giá trị của input
+    if (searchText) {
+      // Nếu có giá trị, hiển thị dropdown
+      dropdownJob.style.display = 'block';
+    } else {
+      // Nếu không có giá trị, ẩn dropdown
+      dropdownJob.style.display = 'none';
+    }
+
+    dropdownJob.addEventListener('click', () => {
+      dropdownJob.style.display = 'none';
+    })
+  });
+}
+
+const searchLocationInput = document.querySelector('.form-search-location input');
+const dropdownLocation = document.querySelector('.dropdown-location');
+
+if (searchLocationInput) {
+  searchLocationInput.addEventListener('keyup', function () {
+    const searchText = searchLocationInput.value.trim();
+
+    // Kiểm tra giá trị của input
+    if (searchText) {
+      // Nếu có giá trị, hiển thị dropdown
+      dropdownLocation.style.display = 'block';
+    } else {
+      // Nếu không có giá trị, ẩn dropdown
+      dropdownLocation.style.display = 'none';
+    }
+
+    dropdownLocation.addEventListener('click', () => {
+      dropdownLocation.style.display = 'none';
+    })
+  });
+}
 
 /* Job Category Slider
   ------------------------------------------------------------------------------------- */
@@ -812,7 +858,6 @@ $('.job-category-slider').slick({
   dots: true,
   touchThreshold: 1000,
   swipe: true,
-  // swipeToSlide: true,
   autoplay: false,
   centerMode: false,
   pauseOnFocus: false,
@@ -869,9 +914,6 @@ $('.list-7-col').slick({
   dots: true,
   touchThreshold: 1000,
   swipe: true,
-  // swipeToSlide: true,
-  // autoplay: false,
-  // centerMode: false,
   pauseOnFocus: false,
   pauseOnHover: false,
   pauseOnDotsHover: false,
@@ -1052,14 +1094,13 @@ const slickSlider = document.querySelectorAll('.slick-track');
 window.onload = () => {
   if (slickSlider) {
     slickSlider.forEach(slider => {
-      console.log(slider);
       // Lấy tất cả các job-category-main
       const slickSlideItem = slider.querySelectorAll('.slick-slide');
-  
+
       // Tính toán chiều cao cần thiết
       const containerHeight = slider.offsetHeight;
       const itemHeight = containerHeight; // Đặt chiều cao của item bằng container
-  
+
       slickSlideItem.forEach(item => {
         item.style.height = itemHeight + 'px';
       });

@@ -1673,9 +1673,18 @@
 .tf-slider .tf-container .content .content-main {
   background-color: #fff;
   border-radius: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
   box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   margin-top: -80px;
+}
+
+.tf-slider .tf-container .content .content-main .content-left {
+  border-radius: 20px 0 0 20px;
+  width: 100%;
+}
+
+.tf-slider .tf-container .content .content-main .content-right {
+  border-radius: 0 20px 20px 0;
 }
 
 .tf-slider .tf-container .content .content-main .form-sl {
@@ -1739,6 +1748,7 @@
 
 .tf-slider .form-sl .form-group-1 {
   max-width: 384px;
+  position: relative;
 }
 
 .tf-slider .form-sl .form-group-1 input {
@@ -1748,6 +1758,32 @@
   border: unset;
   font-size: 16px;
   line-height: 26px;
+}
+
+.tf-slider .form-sl .form-group-1 .dropdown-search {
+  position: absolute;
+  top: 50px;
+  left: 8px;
+  right: 12px;
+  overflow-x: hidden;
+  background-color: white;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  display: none;
+}
+
+.tf-slider .form-sl .form-group-1 .dropdown-search p {
+  cursor: pointer;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 12px 16px;
+  transition: all 0.2s;
+  white-space: normal;
+  word-break: break-word;
+}
+
+.tf-slider .form-sl .form-group-1 .dropdown-search p:hover {
+  background-color: var(--surface2);
 }
 
 .tf-slider .form-sl .form-group-2 select {
@@ -8436,8 +8472,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .job-category-box:hover,
 .job-category-box.active {
   border: 1px solid var(--purple);
-    box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
-    transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
 
@@ -8490,7 +8526,9 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .slick-slider:has(.slick-dots) {
-  .slick-list, .list-locations .slick-track {
+
+  .slick-list,
+  .list-locations .slick-track {
     padding-bottom: 32px;
   }
 }

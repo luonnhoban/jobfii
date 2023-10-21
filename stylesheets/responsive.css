@@ -407,7 +407,7 @@
 
   .features-job .inner-box span.icon-heart {
     padding: 10px;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .tf-slider.sl6 .form-sl,
@@ -1839,7 +1839,7 @@
 
   .footer .inner-footer .list-link-footer>.row>div:last-child {
     position: absolute;
-    bottom: 9px;
+    bottom: 10px;
     right: 0;
   }
 
@@ -1984,17 +1984,13 @@
 
 @media only screen and (max-width: 550px) {
   #scroll-top {
-    width: 32px;
-    height: 32px;
+    width: 36px;
+    height: 36px;
   }
 
   .chat-bot-icon>div {
-    width: 36px;
-    height: 36px;
-    border-radius: 99px 99px 0 99px;
-    overflow: hidden;
-    z-index: 5;
-    cursor: pointer;
+    width: 40px;
+    height: 40px;
   }
 
   .chat-bot-icon>div .icon-chat::before {
