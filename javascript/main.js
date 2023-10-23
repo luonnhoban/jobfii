@@ -144,39 +144,39 @@
   });
   /* accordion
   ------------------------------------------------------------------------------------- */
-  var accordion = function () {
-    var args = { duration: 600 };
-    $(".flat-toggle .toggle-title.active").siblings(".toggle-content").show();
-    $(".flat-toggle.enable .toggle-title").on("click", function () {
-      $(this).closest(".flat-toggle").find(".toggle-content").slideToggle(args);
-      $(this).toggleClass("active");
-    });
+  // var accordion = function () {
+  //   var args = { duration: 600 };
+  //   $(".flat-toggle .toggle-title.active").siblings(".toggle-content").show();
+  //   $(".flat-toggle.enable .toggle-title").on("click", function () {
+  //     $(this).closest(".flat-toggle").find(".toggle-content").slideToggle(args);
+  //     $(this).toggleClass("active");
+  //   });
 
-    $(".flat-accordion .toggle-title").on("click", function () {
-      if (!$(this).is(".active")) {
-        $(this)
-          .closest(".flat-accordion")
-          .find(".toggle-title.active")
-          .toggleClass("active")
-          .next()
-          .slideToggle(args);
-        $(this).toggleClass("active");
-        $(this).next().slideToggle(args);
-      } else {
-        $(this).toggleClass("active");
-        $(this).next().slideToggle(args);
-      }
-    });
+  //   $(".flat-accordion .toggle-title").on("click", function () {
+  //     if (!$(this).is(".active")) {
+  //       $(this)
+  //         .closest(".flat-accordion")
+  //         .find(".toggle-title.active")
+  //         .toggleClass("active")
+  //         .next()
+  //         .slideToggle(args);
+  //       $(this).toggleClass("active");
+  //       $(this).next().slideToggle(args);
+  //     } else {
+  //       $(this).toggleClass("active");
+  //       $(this).next().slideToggle(args);
+  //     }
+  //   });
 
-    $(".flat-accordion .flat-toggle").on("click", function () {
-      if (!$(this).is(".active")) {
-        $(this).find(".flat-toggle.active").toggleClass("active").next();
-        $(this).toggleClass("active");
-      } else {
-        $(this).toggleClass("active");
-      }
-    });
-  };
+  //   $(".flat-accordion .flat-toggle").on("click", function () {
+  //     if (!$(this).is(".active")) {
+  //       $(this).find(".flat-toggle.active").toggleClass("active").next();
+  //       $(this).toggleClass("active");
+  //     } else {
+  //       $(this).toggleClass("active");
+  //     }
+  //   });
+  // };
   /* parallax
   ------------------------------------------------------------------------------------- */
   var parallax = function () {
@@ -747,7 +747,7 @@
     showsearch();
     dropOptionForm();
     flatProgressBar();
-    accordion();
+    // accordion();
     goTop();
     counter();
     setTimeIn();
@@ -1244,3 +1244,64 @@ if (likeBlocks) {
   })
 }
 
+// Add border purple for active question FAQs
+const questionItems = document.querySelectorAll('.flat-toggle')
+
+if (questionItems) {
+  questionItems.forEach((item, index) => {
+    item.addEventListener('click', () => {
+      item.classList.toggle('open')
+
+      removeOpenAnswer(index)
+    })
+  })
+}
+
+function removeOpenAnswer(index1) {
+  questionItems.forEach((item2, index2) => {
+    if (index1 != index2) {
+      item2.classList.remove('open')
+    }
+  })
+}
+
+
+// Open Modal verify email 
+const registerBtn = document.querySelectorAll('.register-btn')
+const verifyEmailModal = document.querySelector('.modal-verify-email-block')
+const verifyEmailModalContainer = document.querySelector('.modal-verify-email-main')
+const closeVerifyEmail = document.querySelector('.verify-email-close')
+
+//Function show modal verifyEmail
+function showVerifyEmailModal() {
+  verifyEmailModal.classList.add('open')
+  document.querySelector('body').style.overflow = 'hidden'
+}
+
+//Function close modal verifyEmail
+function removeVerifyEmailModal() {
+  verifyEmailModal.classList.remove('open')
+  document.querySelector('body').style.overflow = 'unset'
+}
+
+// listen event click bag icon on header menu
+if (registerBtn) {
+  registerBtn.forEach(btn => {
+    btn.addEventListener('click', showVerifyEmailModal)
+  })
+}
+
+//listen event click and close modal verifyEmail
+if(closeVerifyEmail) {
+  closeVerifyEmail.addEventListener('click', removeVerifyEmailModal)
+}
+
+//listen event click outside modal-container and close modal verifyEmail
+if(verifyEmailModal) {
+  verifyEmailModal.addEventListener('click', removeVerifyEmailModal)
+}
+
+//Stop prevent default when click on container modal verifyEmail
+verifyEmailModalContainer.addEventListener('click', function (event) {
+  event.stopPropagation()
+})

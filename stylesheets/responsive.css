@@ -2186,13 +2186,24 @@
     padding: 60px 0px;
   }
 
+  .accordion-page .des {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .flat-accordion .flat-toggle {
+    padding: 16px;
+  }
+
   .flat-accordion .flat-toggle .toggle-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .flat-accordion .flat-toggle .toggle-title span::before,
   .flat-accordion .flat-toggle .toggle-title span::after {
-    right: -16px;
+    right: 0;
+    width: 16px;
+    height: 2px;
   }
 
   /* .tf-slider.style-1.slider-map .content .form-sl {
