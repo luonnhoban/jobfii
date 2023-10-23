@@ -392,26 +392,6 @@ button {
   border: none;
 }
 
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  font-size: 12px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 700;
-  color: #202020;
-  background-color: transparent;
-  text-transform: uppercase;
-  border-width: 1px;
-  border-style: solid;
-  border-color: #202020;
-  padding: 7px 21px;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -ms-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
 
 select,
 textarea,
@@ -497,35 +477,7 @@ input::-webkit-input-placeholder {
   background-image: none;
 }
 
-textarea,
-input[type="text"],
-input[type="submit"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"],
-.uneditable-input,
-.dropdown-menu,
-.navbar .nav>.active>a,
-.navbar .nav>.active>a:hover,
-.navbar .nav>.active>a:focus {
-  -webkit-appearance: none;
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  -o-box-shadow: none;
-  box-shadow: none;
-  color: #a0a0a0;
-}
+
 
 .tf-container.ctn-full {
   width: 100%;

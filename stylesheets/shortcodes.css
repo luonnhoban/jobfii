@@ -2692,13 +2692,10 @@
 }
 
 .rating-review .left-rating .list-star li {
-  color: #ffb321;
   font-size: 22px;
 }
 
-.rating-review .left-rating .list-star li:not(:last-child) {
-  margin-right: 7px;
-}
+
 
 .rating-review .left-rating .count-rating {
   font-weight: 500;
@@ -2817,11 +2814,10 @@
 
 .list-star li {
   font-size: 15px;
-  color: #ffb321;
 }
 
 .list-star li:not(:last-child) {
-  margin-right: 4px;
+
 }
 
 .client-review li .content .top-content .avatar .infor .list-star {
