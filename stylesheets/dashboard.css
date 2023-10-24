@@ -3284,13 +3284,13 @@ input[type="radio"]:checked:after {
     height: 12px;
     border-radius: 50%;
     border: 2px solid #fff;
-    bottom: 4px;
-    right: 0;
+    bottom: 0px;
+    right: 6px;
     z-index: 2;
 }
 
 .flat-dashboard-messages .status-icon.online {
-    background-color: #6728D0;
+    background-color: var(--green);
 }
 
 .flat-dashboard-messages .status-icon.offline {

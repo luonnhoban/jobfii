@@ -276,11 +276,11 @@ body {
   font: 14px/25px "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
   background-color: #fff;
-  color: #202020;
+  color: var(--on-surface);
 }
 
 a {
-  color: #121212;
+  color: var(--on-surface);
   text-decoration: none;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -1644,6 +1644,7 @@ input[type="color"],
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
+  transition: all 0.3s ease-out;
 }
 
 .main-nav.mobile #menu-primary-menu li {
@@ -1664,7 +1665,6 @@ input[type="color"],
 .menu-mobile-popup .main-nav .menu-item-has-children-mobile.active .iteam-menu::before {
   top: 15px;
   transform: rotate(180deg) !important;
-  transition: all 0.3s ease-out;
 }
 
 .main-nav.mobile #menu-primary-menu>li .sub-menu-mobile {
@@ -2361,7 +2361,7 @@ input[type="color"],
   font-weight: 400;
   font-size: 18px;
   line-height: 28px;
-  color: #64666c;
+  color: var(--on-surface);
   margin-bottom: 16px;
 }
 
@@ -2464,7 +2464,7 @@ input[type="color"],
   text-transform: uppercase;
 }
 
-.blog-detail-side-bar-content .nav-links p {
+.blog-detail-side-bar-content .nav-links .link {
   text-transform: capitalize;
   font-weight: 700;
   font-size: 20px;
@@ -2489,8 +2489,8 @@ input[type="color"],
 
 .blog-detail-side-bar-content .comment-list-wrap .comment-title {
   font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
+  font-size: 24px;
+  line-height: 30px;
   margin-bottom: 24px;
 }
 
@@ -2518,7 +2518,7 @@ input[type="color"],
 .widget-comment-wrap .content-post .post-author {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 28px;
 }
 

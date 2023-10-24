@@ -186,10 +186,6 @@
     top: 15px;
   }
 
-  .widget-blog-1 .content {
-    padding: 25px !important;
-  }
-
   .features-job.style-3 .info {
     margin-left: 0;
   }
@@ -330,7 +326,7 @@
 
   /* wd-get-app */
   .wd-get-app .thumb img {
-    height: auto !important;
+    height: 360px;
   }
 
   .mobile-section .title-iconbox p,
@@ -517,10 +513,6 @@
 
   .cv-form-details .wd-social span {
     margin-right: 20px;
-  }
-
-  .get-app-sc {
-    padding: 60px 0;
   }
 
   .group-half-map.st1 .content-left {
@@ -952,13 +944,13 @@
     flex-direction: column;
   }
 
-  .widget-blog-1 .content {
+  /* .widget-blog-1 .content {
     padding: 0px 27px 27px !important;
   }
 
   .widget-blog-1 .content.stc {
     padding: 24px !important;
-  }
+  } */
 
   .widget-blog-1 img {
     width: 100%;
@@ -969,13 +961,12 @@
   }
 
   /* ========= blog ========== */
+  .blog-detail-01 .widget-blog-1 .main-heading br{
+    display: none;
+  }
 
   .blog-detail-side-bar-content .image-single {
     flex-wrap: wrap;
-  }
-
-  .blog-detail-side-bar-content .tag-social {
-    margin-bottom: 0 !important;
   }
 
   .blog-detail-side-bar-content .tag-social,
@@ -992,7 +983,6 @@
 
   .blog-detail-side-bar-content .nav-links {
     flex-direction: column;
-    padding: 0 !important;
   }
 
   .wd-review-job.page-text.stc {
@@ -1407,12 +1397,21 @@
     padding: 24px 14px 28px;
   }
 
-
-
-
   .tes-feature-section .feature-slider,
   .tes-feature-section .feature-slider.st1 {
     margin-left: 0;
+  }
+
+  .feature-blog .sub-feature .row {
+    width: calc(100% + 24px);
+  }
+
+  .feature-blog .sub-feature .blog-item-main.widget-blog-1 .content {
+    padding: 24px;
+  }
+
+  .blog-detail-side-bar-content .nav-links::after {
+    display: none;
   }
 }
 
@@ -1554,10 +1553,6 @@
   .tf-slider .heading.text-center h2 {
     font-size: 40px;
   }
-
-  /* .group-icon .sl-icon-box.box {
-    width: calc(50% - 40px);
-  } */
 
   .footer-cl-2 {
     margin-left: 0%;
@@ -1851,6 +1846,45 @@
     font-size: 10px;
     line-height: 14px;
   }
+
+  .feature-blog .blog-item-main.feature-main {
+    height: 360px;
+  }
+
+  .widget-blog-1.stc .content,
+  .feature-blog .blog-item-main.widget-blog-1 .content,
+  .feature-blog .sub-feature .blog-item-main.widget-blog-1 .content {
+    padding: 20px;
+  }
+
+  .feature-blog .blog-item-main.widget-blog-1 .main-title {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+
+  .feature-blog .sub-feature .blog-item-main.widget-blog-1 .main-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .blog-detail-01 .widget-blog-1 .main-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .blog-detail-side-bar-content>p,
+  .widget-comment-wrap .content-post .post-author {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .wd-form-rating h3, 
+  .blog-detail-side-bar-content>h5,
+  .blog-detail-side-bar-content .comment-list-wrap .comment-title {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1948,9 +1982,9 @@
     flex-direction: column;
   }
 
-  .widget-blog-1 .content {
+  /* .widget-blog-1 .content {
     padding: 0px 10px !important;
-  }
+  } */
 
   .widget-blog-1 img {
     width: 100%;
@@ -2162,6 +2196,11 @@
   .get-app-sc {
     padding: 24px 0 0;
   }
+
+  .wd-get-app .thumb img {
+    height: 300px;
+    margin-left: 2%;
+  } 
 
   .pricing-section {
     padding-bottom: 80px;
@@ -2572,6 +2611,24 @@
   .ft-title {
     margin-bottom: 10px;
   }
+
+  .widget-comment-wrap .content-post .post-date {
+    margin-bottom: 56px;
+  }
+
+  .widget-comment-wrap .helpfull {
+    padding: 6px 12px;
+    border-radius: 18px;
+    font-size: 12px;
+    line-height: 20px;
+    top: 58px;
+    left: 80px;
+    right: unset;
+  }
+
+  .widget-comment-wrap .helpfull span {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -2724,5 +2781,9 @@
 
   .location-section-four, .job-category-section {
     padding: 40px 0;
+  }
+
+  .box-latest .box-content {
+    padding: 20px;
   }
 }
