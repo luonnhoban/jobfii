@@ -1292,16 +1292,18 @@ if (registerBtn) {
 }
 
 //listen event click and close modal verifyEmail
-if(closeVerifyEmail) {
+if (closeVerifyEmail) {
   closeVerifyEmail.addEventListener('click', removeVerifyEmailModal)
 }
 
 //listen event click outside modal-container and close modal verifyEmail
-if(verifyEmailModal) {
+if (verifyEmailModal) {
   verifyEmailModal.addEventListener('click', removeVerifyEmailModal)
 }
 
 //Stop prevent default when click on container modal verifyEmail
-verifyEmailModalContainer.addEventListener('click', function (event) {
-  event.stopPropagation()
-})
+if (verifyEmailModalContainer) {
+  verifyEmailModalContainer.addEventListener('click', function (event) {
+    event.stopPropagation()
+  })
+}
