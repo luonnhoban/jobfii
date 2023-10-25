@@ -42,6 +42,7 @@
   * jobs tab
   * PAGE 
   * Page not found 
+  * freelancer
   * Check out
   * MAP
   * TF section spacing 
@@ -418,7 +419,7 @@
 }
 
 .widget-news .widget-news-wrap .widget-blog-1:hover {
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border: none;
 }
 
@@ -560,7 +561,7 @@
 }
 
 .box-latest:hover .box-content {
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border-color: #fff;
 }
 
@@ -1211,7 +1212,7 @@
 .wd-review-job .thumb3 .group-user {
   padding: 15px 24px;
   border: 1px solid #e5e5e5;
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border-radius: 73px;
   background: #fff;
   align-items: center;
@@ -1301,7 +1302,7 @@
 
 /* widget testimonials */
 .wd-testimonials {
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border-radius: 20px;
   background: #fff;
   padding: 40px 40px 40px 40px;
@@ -3405,7 +3406,7 @@
 
 .wd-cv-template {
   border: 1px solid #e5e5e5;
-  filter: drop-shadow(0px 10px 25px rgba(54, 95, 104, 0.1));
+  filter: drop-shadow(0px 10px 25px 0px rgba(103, 40, 208, 0.1));
   border-radius: 8px;
   background: #fff;
   margin-bottom: 31px;
@@ -4244,7 +4245,7 @@
   display: flex;
   background: #ffffff;
   border-left: 1px solid #e5e5e5;
-  filter: drop-shadow(0px 10px 25px rgba(54, 95, 104, 0.1));
+  filter: drop-shadow(0px 10px 25px 0px rgba(103, 40, 208, 0.1));
   border-radius: 8px;
   overflow: hidden;
   width: 750px;
@@ -9476,7 +9477,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .employer-block.style-2:hover,
 .employer-block.style-3:hover {
   border-color: #ffffff;
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   transition: all 0.5s ease-in-out;
 }
 
@@ -9774,7 +9775,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .tf-iconbox.style-3:hover {
   border: 1px solid #6728D0;
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
 }
 
 .tf-iconbox.style-3 .box-content button {
@@ -9846,7 +9847,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .wd-thum-career:hover {
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border: 1px solid #e5e5e5;
 }
 
@@ -10769,6 +10770,71 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 }
 
+/* freelancer */
+.freelancer-section .content-left .widget-filter.mb1 {
+  margin-bottom: 0;
+}
+
+.freelancer-item .video-thumb {
+  margin-bottom: unset;
+}
+
+.freelancer-item .video-thumb .thumb {
+  width: unset;
+  height: unset;
+  margin: unset;
+}
+
+.freelancer-item .video-thumb .thumb img {
+  width: 150px;
+  height: 150px;
+  max-width: unset;
+}
+
+@media (max-width: 1200px) {
+  .freelancer-item .job-archive-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 16px;
+    gap: 16px;
+  }
+
+  .freelancer-item .career-header-left {
+    width: fit-content;
+  }
+
+  .freelancer-item.wd-thum-career .job-archive-header span.icon-heart {
+    position: absolute !important;
+    top: 16px;
+    right: 16px;
+  }
+
+  .freelancer-item.features-job .job-archive-header h4 {
+    padding-right: 36px;
+  }
+}
+
+@media (max-width: 550px) {
+  .freelancer-item>div {
+    flex-direction: column;
+  }
+
+  .freelancer-item .video-thumb .thumb img {
+    width: 100%;
+    height: auto;
+  }
+
+  .freelancer-item.wd-thum-career .job-archive-header span.icon-heart {
+    margin-right: 0;
+    top: 0;
+    right: 0;
+  }
+
+  .freelancer-item.wd-thum-career .career-header-right {
+    padding: 0;
+  }
+}
+
 /* shop */
 .wd-shop .inner-box .logo-company {
   max-width: 132px;
@@ -11254,7 +11320,7 @@ input[type="number"]::-webkit-inner-spin-button {
   border-radius: 12px;
   background: #ffffff;
   min-width: 366px;
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
 }
 
 .map-listing-item .image-box {
@@ -11804,7 +11870,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .widget-blog-1.stc:hover .content {
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border-color: #fff;
 }
 

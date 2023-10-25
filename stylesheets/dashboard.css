@@ -2284,7 +2284,7 @@ input[type="radio"]:checked:after {
 .flat-dashboard-month .wrap-month:hover,
 .flat-dashboard-month .wrap-month.active {
     border: 1px solid #6728D0;
-    box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+    box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
 }
 
 .flat-dashboard-month .wrap-month:hover .tt-button a,
