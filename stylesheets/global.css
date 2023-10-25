@@ -90,6 +90,12 @@
     line-height: 28px;
 }
 
+.body3 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
 .text-subtitle {
     font-size: 14px;
     font-weight: 600;
@@ -241,6 +247,10 @@
 
 .h-60 {
     height: 60px;
+}
+
+.fs-24 {
+    font-size: 24px;
 }
 
 .gap-40 {
@@ -673,4 +683,10 @@
 
 .border-line {
     border: 1px solid var(--line);
+}
+
+.dot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
 }
