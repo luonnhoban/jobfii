@@ -159,7 +159,8 @@ ul {
   list-style: none;
 }
 
-a, button {
+a,
+button {
   cursor: pointer;
 }
 
@@ -1083,7 +1084,7 @@ input::-webkit-input-placeholder {
 #main-nav #menu-primary-menu .menu-item-has-children .menu-bar li.current-item,
 #main-nav #menu-primary-menu>li .sub-menu li:hover,
 #main-nav #menu-primary-menu>li .sub-menu li.current-item {
-  background-color: var(--surface);
+  background-color: var(--surface2);
 }
 
 #main-nav #menu-primary-menu>li .sub-menu .nav-sub.current-item:last-child,
@@ -2188,7 +2189,7 @@ input::-webkit-input-placeholder {
 }
 
 .blog-masonry .list-blog .widget-blog-1:hover {
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border: none;
 }
 
@@ -2244,7 +2245,7 @@ input::-webkit-input-placeholder {
 }
 
 .blog-grid .list-blog-wrap .widget-blog-1:hover {
-  box-shadow: 0px 10px 25px rgba(54, 95, 104, 0.1);
+  box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border-color: var(--surface);
 }
 
@@ -2736,7 +2737,7 @@ input::-webkit-input-placeholder {
   height: 80px;
   border-radius: 99px 99px 0 99px;
   overflow: hidden;
-  z-index: 5;
+  z-index: 8;
   cursor: pointer;
 }
 

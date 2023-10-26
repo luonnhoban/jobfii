@@ -48,6 +48,15 @@
 <body>
   <a id="scroll-top"></a>
 
+  <!-- Start Chat bot block -->
+  <div class="chat-bot-icon">
+    <div class="flex-column-center bg-purple text-white">
+      <i class="icon-chat"></i>
+      <p>Messenger</p>
+    </div>
+  </div>
+  <!-- End Chat bot block -->
+
   <!-- preloade -->
   <div class="preload preload-container">
     <div class="preload-logo">
@@ -76,11 +85,11 @@
             <div class="nav-wrap">
               <nav class="main-nav mobile">
                 <ul id="menu-primary-menu" class="menu">
-                  <li class="menu-item current-item">
+                  <li class="menu-item">
                     <a href="index.html" class="iteam-menu">Home</a>
                   </li>
                   <li class="menu-item">
-                    <a href="news-feed.html" class="iteam-menu">News Feed</a>
+                    <a href="news-feed-candidate.html" class="iteam-menu">News Feed</a>
                   </li>
                   <li class="menu-item menu-item-has-children-mobile">
                     <a class="iteam-menu">Find jobs </a>
@@ -161,7 +170,7 @@
                         <a href="accordion-page.html">FAQS</a>
                       </li>
                       <li class="menu-item menu-item-mobile">
-                        <a href="404-eror.html">404 Page</a>
+                        <a href="404-error.html">404 Page</a>
                       </li>
                       <li class="menu-item menu-item-mobile">
                         <a href="login.html">Login/Sign up</a>
@@ -234,370 +243,40 @@
 
 
   <!-- HEADER -->
-  <header id="header" class="header header-default">
+  <header id="header" class="header header-default header-fixed">
+
     <div class="tf-container ct2">
       <div class="row">
         <div class="col-md-12">
           <div class="sticky-area-wrap">
             <div class="header-ct-left">
               <div id="logo" class="logo">
-                <a href="index.html
-">
+                <a href="index.html">
                   <img class="site-logo" src="images/logo.png" alt="Image" />
-
                 </a>
-              </div>
-              <div class="categories">
-                <a href="#!"><span class="icon-grid"></span>Categories</a>
-                <div class="sub-categorie">
-                  <ul class="pop-up">
-                    <li>
-                      <a href="#!"><span class="icon-categorie-1"></span>Design & Creative</a>
-                      <div class="group-menu-category">
-                        <div class="menu left">
-                          <h6>Top Categories</h6>
-                          <ul>
-                            <li><a href="find-jobs-list.html">Design & Creative</a></li>
-                            <li><a href="find-jobs-list.html">Digital marketing</a></li>
-                            <li><a href="find-jobs-list.html">Development & IT</a></li>
-                            <li><a href="find-jobs-list.html">Music & Audio</a></li>
-                            <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
-                            <li><a href="find-jobs-list.html">Programming & Tech</a></li>
-                            <li><a href="find-jobs-list.html">video & Animation</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu right">
-                          <h6>Top Skills</h6>
-                          <ul>
-                            <li><a href="jobs-single.html">Adobe Photoshop</a></li>
-                            <li><a href="jobs-single.html">adobe XD</a></li>
-                            <li><a href="jobs-single.html">Android Developer</a></li>
-                            <li><a href="jobs-single.html">Figma</a></li>
-                            <li><a href="jobs-single.html">CSS, Html</a></li>
-                            <li><a href="jobs-single.html">BA</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#!"><span class="icon-categorie-8"></span>Digital Marketing</a>
-                      <div class="group-menu-category">
-                        <div class="menu left">
-                          <h6>Top Categories</h6>
-                          <ul>
-                            <li><a href="find-jobs-list.html">Digital marketing</a></li>
-                            <li><a href="find-jobs-list.html">Design & Creative</a></li>
-                            <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
-                            <li><a href="find-jobs-list.html">Development & IT</a></li>
-                            <li><a href="find-jobs-list.html">Programming & Tech</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu right">
-                          <h6>Top Skills</h6>
-                          <ul>
-                            <li><a href="jobs-single.html">adobe XD</a></li>
-                            <li><a href="jobs-single.html">Figma</a></li>
-                            <li><a href="jobs-single.html">BA</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#!"><span class="icon-categorie-2"></span>Development & IT</a>
-                      <div class="group-menu-category">
-                        <div class="menu left">
-                          <h6>Top Categories</h6>
-                          <ul>
-                            <li><a href="find-jobs-list.html">Design & Creative</a></li>
-                            <li><a href="find-jobs-list.html">Development & IT</a></li>
-                            <li><a href="find-jobs-list.html">Music & Audio</a></li>
-                            <li><a href="find-jobs-list.html">video & Animation</a></li>
-                            <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu right">
-                          <h6>Top Skills</h6>
-                          <ul>
-                            <li><a href="jobs-single.html">adobe XD</a></li>
-                            <li><a href="jobs-single.html">Android Developer</a></li>
-                            <li><a href="jobs-single.html">Adobe Photoshop</a></li>
-                            <li><a href="jobs-single.html">CSS, Html</a></li>
-                            <li><a href="jobs-single.html">BA</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#!"><span class="icon-categorie-3"></span>Music & Audio</a>
-                      <div class="group-menu-category">
-                        <div class="menu left">
-                          <h6>Top Categories</h6>
-                          <ul>
-                            <li><a href="find-jobs-list.html">Digital marketing</a></li>
-                            <li><a href="find-jobs-list.html">Design & Creative</a></li>
-                            <li><a href="find-jobs-list.html">video & Animation</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu right">
-                          <h6>Top Skills</h6>
-                          <ul>
-                            <li><a href="jobs-single.html">Android Developer</a></li>
-                            <li><a href="jobs-single.html">Adobe Photoshop</a></li>
-                            <li><a href="jobs-single.html">adobe XD</a></li>
-                            <li><a href="jobs-single.html">Figma</a></li>
-                            <li><a href="jobs-single.html">BA</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#!"><span class="icon-categorie-4"></span>Finance &
-                        Accounting</a>
-                      <div class="group-menu-category">
-                        <div class="menu left">
-                          <h6>Top Categories</h6>
-                          <ul>
-                            <li><a href="find-jobs-list.html">Development & IT</a></li>
-                            <li><a href="find-jobs-list.html">Design & Creative</a></li>
-                            <li><a href="find-jobs-list.html">Programming & Tech</a></li>
-                            <li><a href="find-jobs-list.html">Music & Audio</a></li>
-                            <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
-                            <li><a href="find-jobs-list.html">video & Animation</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu right">
-                          <h6>Top Skills</h6>
-                          <ul>
-                            <li><a href="jobs-single.html">adobe XD</a></li>
-                            <li><a href="jobs-single.html">Figma</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#!"><span class="icon-categorie-5"></span>Programming & Tech</a>
-                      <div class="group-menu-category">
-                        <div class="menu left">
-                          <h6>Top Categories</h6>
-                          <ul>
-                            <li><a href="find-jobs-list.html">Design & Creative</a></li>
-                            <li><a href="find-jobs-list.html">Digital marketing</a></li>
-                            <li><a href="find-jobs-list.html">Music & Audio</a></li>
-                            <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
-                            <li><a href="find-jobs-list.html">Programming & Tech</a></li>
-                            <li><a href="find-jobs-list.html">video & Animation</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu right">
-                          <h6>Top Skills</h6>
-                          <ul>
-                            <li><a href="jobs-single.html">Adobe Photoshop</a></li>
-                            <li><a href="jobs-single.html">adobe XD</a></li>
-                            <li><a href="jobs-single.html">Figma</a></li>
-                            <li><a href="jobs-single.html">CSS, Html</a></li>
-                            <li><a href="jobs-single.html">BA</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#!"><span class="icon-categorie-6"></span>Video & Animation</a>
-                      <div class="group-menu-category">
-                        <div class="menu left">
-                          <h6>Top Categories</h6>
-                          <ul>
-                            <li><a href="find-jobs-list.html">Design & Creative</a></li>
-                            <li><a href="find-jobs-list.html">Digital marketing</a></li>
-                            <li><a href="find-jobs-list.html">Programming & Tech</a></li>
-                            <li><a href="find-jobs-list.html">video & Animation</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu right">
-                          <h6>Top Skills</h6>
-                          <ul>
-                            <li><a href="jobs-single.html">Adobe Photoshop</a></li>
-                            <li><a href="jobs-single.html">CSS, Html</a></li>
-                            <li><a href="jobs-single.html">BA</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                    <li>
-                      <a href="#!"><span class="icon-categorie-7"></span>Writing &
-                        translation</a>
-                      <div class="group-menu-category">
-                        <div class="menu left">
-                          <h6>Top Categories</h6>
-                          <ul>
-                            <li><a href="find-jobs-list.html">Finance & Accounting</a></li>
-                            <li><a href="find-jobs-list.html">Programming & Tech</a></li>
-                            <li><a href="find-jobs-list.html">video & Animation</a></li>
-                          </ul>
-                        </div>
-                        <div class="menu right">
-                          <h6>Top Skills</h6>
-                          <ul>
-                            <li><a href="jobs-single.html">Figma</a></li>
-                            <li><a href="jobs-single.html">CSS, Html</a></li>
-                            <li><a href="jobs-single.html">BA</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
             <div class="header-ct-center">
               <div class="nav-wrap">
                 <nav id="main-nav" class="main-nav">
                   <ul id="menu-primary-menu" class="menu">
-                    <li class="menu-item menu-item-has-children">
-                      <a href="#!">Home </a>
-                      <div class="menu-bar">
-
-                        <ul class="sub-menu-bar">
-                          <li class="menu-item">
-                            <a href="index.html
-">Home Page 01 </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="Home-02.html">Home Page 02 </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="home-03.html">Home Page 03 </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="home-04.html">Home Page 04 </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="home-05.html">Home Page 05 </a>
-                          </li>
-                        </ul>
-
-
-                        <ul class="sub-menu-bar">
-                          <li class="menu-item">
-                            <a href="index.html">Home Page 06 </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="home-07.html">Home Page 07 </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="home-08.html">Home Page 08 </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="home-09.html">Home Page 09 </a>
-                          </li>
-                          <li class="menu-item">
-                            <a href="home-10.html">Home Page 10 </a>
-                          </li>
-                        </ul>
-
-
-                      </div>
-
+                    <li class="menu-item">
+                      <a href="index.html">Home</a>
+                    </li>
+                    <li class="menu-item">
+                      <a href="news-feed-candidate.html">News Feed</a>
                     </li>
                     <li class="menu-item menu-item-has-children">
                       <a href="#!">Find jobs </a>
                       <ul class="sub-menu st1">
                         <li class="nav-sub">
-                          <a href="#!">Jobs Listing <span class="icon-keyboard_arrow_right"></span> </a>
-
-                          <ul class="nav-sub-menu">
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-list.html">List Layout</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-grid.html">Grid Layout</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-list-sidebar.html">List Sidebar</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-grid-sidebar.html">Grid Sidebar</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-list-sidebar-fullwidth.html">List Sidebar FullWidth</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-grid-sidebar-fullwidth.html">Grid Sidebar FullWidth</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-topmap.html">Top Map</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-topmap-sidebar.html">Top Map Sidebar</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-half-map.html">Half Map - V1</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="find-jobs-half-map2.html">Half Map - V2</a>
-                            </li>
-                          </ul>
+                          <a href="find-jobs-half-map2.html">Find Job Map</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="jobs-single.html">Jobs Single - V1</a>
-
+                          <a href="find-jobs-grid-sidebar-fullwidth.html">Find Job Fullwidth</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="jobs-single2.html">Jobs Single - V2</a>
-                        </li>
-                      </ul>
-                    </li>
-
-                    <li class="menu-item menu-item-has-children">
-                      <a href="#!">Employers</a>
-                      <ul class="sub-menu st1">
-                        <li class="nav-sub">
-                          <a href="#!">Employers Listing <span class="icon-keyboard_arrow_right"></span> </a>
-
-                          <ul class="nav-sub-menu">
-
-                            <li class="nav-menu-item">
-                              <a href="employers-list.html">List Layout</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="employers_grid.html">Grid Layout</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="employers-list-sidebar.html">List Sidebar</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="employers-grid-sidebar.html">Grid Sidebar</a>
-                            </li>
-
-                            <li class="nav-menu-item">
-                              <a href="employers-grid-fullwidth.html">Grid Fullwidth</a>
-                            </li>
-
-                            <li class="nav-menu-item">
-                              <a href="employers-topmap.html">Top Map</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="employers-half-map.html">Half Map</a>
-                            </li>
-
-                          </ul>
-                        </li>
-                        <li class="nav-sub">
-                          <a href="employers-single.html">Employers Single - V1</a>
-
-
-                        </li>
-                        <li class="nav-sub">
-                          <a href="employers-single2.html">Employers Single - V2</a>
-                        </li>
-
-                        <li class="nav-sub">
-                          <a href="employers-review.html">Employers Reviews</a>
-                        </li>
-                        <li class="nav-sub">
-                          <a href="employers-not-pound.html">Employers Not Found</a>
-                        </li>
-                        <li class="nav-sub">
-                          <a href="dashboard/employer-dashboard.html">Employer Dashboard</a>
+                          <a href="find-jobs-grid-sidebar.html">Find Job Sidebar</a>
                         </li>
                       </ul>
                     </li>
@@ -605,144 +284,75 @@
                       <a href="#!">Candidates</a>
                       <ul class="sub-menu st1">
                         <li class="nav-sub">
-                          <a href="#!">Candidates Listing <span class="icon-keyboard_arrow_right"></span> </a>
-
-                          <ul class="nav-sub-menu">
-
-                            <li class="nav-menu-item">
-                              <a href="candidate.html">List Layout</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="candidate-grid.html">Grid Layout</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="candidate-list-sidebar.html">List Sidebar</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="candidate-top-map.html">Top Map</a>
-                            </li>
-
-                            <li class="nav-menu-item">
-                              <a href="candidate-half-map.html">Half Map</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="candidate-no-available.html">No Available - V1</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="candidate-no-available2.html">No Available - V2</a>
-                            </li>
-                          </ul>
+                          <a href="candidate-half-map.html">Candidates Map</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="#!">Sample CV <span class="icon-keyboard_arrow_right"></span> </a>
-                          <ul class="nav-sub-menu">
-
-                            <li class="nav-menu-item">
-                              <a href="sample-cv.html">Sample CV</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="cv-details.html">CV Details</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="sample-cv-sidebar.html">Sample CV Sidebar</a>
-                            </li>
-                          </ul>
+                          <a href="candidate-grid-fullwidth.html">Candidates Fullwidth</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="candidate-single.html">Candidate Single - V1</a>
+                          <a href="candidate-grid-sidebar.html">Candidates Sidebar</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="candidate-single2.html">Candidate Single - V2</a>
-
+                          <a href="candidate-package.html">Candidates Package</a>
                         </li>
-
-                        <li class="nav-sub">
-                          <a href="dashboard/candidates-dashboard.html">Candidates Dashboard</a>
+                        <li class="nav-menu-item">
+                          <a href="sample-cv.html">Sample CV</a>
                         </li>
                       </ul>
                     </li>
                     <li class="menu-item menu-item-has-children">
-                      <a href="#!">Blog</a>
+                      <a href="#!">Employers</a>
                       <ul class="sub-menu st1">
                         <li class="nav-sub">
-                          <a href="#!">Blog Listing <span class="icon-keyboard_arrow_right"></span> </a>
-
-                          <ul class="nav-sub-menu">
-
-                            <li class="nav-menu-item">
-                              <a href="blog.html">Blog List </a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="blog-grid.html">Blog Grid</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="blog-masonry.html">Blog Masonry</a>
-                            </li>
-                          </ul>
+                          <a href="employers-half-map.html">Employers Map</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="#!">Blog Details<span class="icon-keyboard_arrow_right"></span> </a>
-                          <ul class="nav-sub-menu">
-
-                            <li class="nav-menu-item">
-                              <a href="blog-detail.html">Blog Details- V1</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="blog-detail-01.html">Blog Details- V2</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="blog-detail-side-bar.html">Blog Details Sidebar</a>
-                            </li>
-                          </ul>
+                          <a href="employers-grid-fullwidth.html">Employers Fullwidth</a>
                         </li>
-
+                        <li class="nav-sub">
+                          <a href="employers-grid-sidebar.html">Employers Sidebar</a>
+                        </li>
+                        <li class="nav-sub">
+                          <a href="employers-package.html">Employers Package</a>
+                        </li>
                       </ul>
-
                     </li>
-                    <li class="menu-item menu-item-has-children current-item">
+
+                    <li class="menu-item">
+                      <a href="freelancer.html">Freelancer</a>
+                    </li>
+
+                    <li class="menu-item">
+                      <a href="shop.html">Shop</a>
+                    </li>
+
+                    <li class="menu-item">
+                      <a href="blog.html">Blog</a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
                       <a href="#!">Pages</a>
                       <ul class="sub-menu st1">
                         <li class="nav-sub">
-                          <a href="#!">Shop<span class="icon-keyboard_arrow_right"></span> </a>
-                          <ul class="nav-sub-menu">
-
-                            <li class="nav-menu-item">
-                              <a href="shop.html">Shop List</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="shop-details.html">Shop Single</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="shopping-cart.html">Shopping Cart</a>
-                            </li>
-                            <li class="nav-menu-item">
-                              <a href="checkout.html">Checkout</a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="nav-sub">
                           <a href="about-us.html">About Us</a>
-
                         </li>
                         <li class="nav-sub">
                           <a href="accordion-page.html">FAQS</a>
                         </li>
-                        <li class="nav-sub current-item">
-                          <a href="term-of-use.html">Terms Of Use</a>
+                        <li class="nav-sub">
+                          <a href="404-error.html">404 Page</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="pricing.html">Pricing</a>
+                          <a href="login.html">Login/Sign up</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="login.html">Login</a>
+                          <a href="contact-us.html">Contact</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="create-account.html">Create Account</a>
+                          <a href="review.html">Review</a>
                         </li>
                         <li class="nav-sub">
-                          <a href="contact-us.html">Contact Us</a>
+                          <a href="how-work-it.html">How work it</a>
                         </li>
-
                       </ul>
 
                     </li>
@@ -757,52 +367,64 @@
               <div class="header-customize-item bell">
                 <span class="icon-bell"></span>
                 <div class="sub-notification">
-                  <div class="sub-notification-heading">
-                    <div class="sub-notification-title">Notification</div>
-                    <span>5 New</span>
+                  <div class="sub-notification-heading pb-12">
+                    <div class="sub-notification-title heading7">Notification</div>
+                    <span>
+                      <u class="caption2 text-placehover">Mark all as read</u></span>
                   </div>
                   <div class="sub-notification-content">
-                    <div class="sub-notification-item icon-plus">
-                      <div class="time">Last day</div>
-                      <div class="content">
-                        Your submit job <span class="name">Graphic Design</span> is
-                        <span class="status">Success</span>
+                    <div class="sub-notification-item d-flex gap-12 mt-12 pb-12">
+                      <div class="left">
+                        <i class="icon-mail-envelope-closed bg-surface bora-50 p-6 d-block"></i>
+                      </div>
+                      <div class="right">
+                        <div class="text-subtitle">Undo Rejected</div>
+                        <div class="caption2 text-secondary mt-4">The application is undo rejected on your job
+                          <span class="text-on-surface">Social Media Marketing</span> by
+                          <span class="text-on-surface">Employer</span>.
+                        </div>
+                        <div class="caption2 fw-400 mt-4">05 min ago</div>
                       </div>
                     </div>
-                    <div class="sub-notification-item icon-plus">
-                      <div class="time">5 Day ago</div>
-                      <div class="content">
-                        A new application is submitted on your job
-                        <span class="name">Graphic Design</span> by
-                        <span class="name">Maverick Nguyen</span>
+                    <div class="sub-notification-item d-flex gap-12 mt-12 pb-12">
+                      <div class="left">
+                        <i class="icon-mail-envelope-closed bg-surface bora-50 p-6 d-block"></i>
+                      </div>
+                      <div class="right">
+                        <div class="text-subtitle">Undo Rejected</div>
+                        <div class="caption2 text-secondary mt-4">The application is undo rejected on your job
+                          <span class="text-on-surface">Social Media Marketing</span> by
+                          <span class="text-on-surface">Employer</span>.
+                        </div>
+                        <div class="caption2 fw-400 mt-4">05 min ago</div>
                       </div>
                     </div>
-                    <div class="sub-notification-item icon-plus">
-                      <div class="time">5 Day ago</div>
-                      <div class="content">
-                        A new application is submitted on your job
-                        <span class="name">Graphic Design</span> by
-                        <span class="name">Maverick Nguyen</span>
+                    <div class="sub-notification-item d-flex gap-12 mt-12 pb-12">
+                      <div class="left">
+                        <i class="icon-mail-envelope-closed bg-surface bora-50 p-6 d-block"></i>
+                      </div>
+                      <div class="right">
+                        <div class="text-subtitle">Undo Rejected</div>
+                        <div class="caption2 text-secondary mt-4">The application is undo rejected on your job
+                          <span class="text-on-surface">Social Media Marketing</span> by
+                          <span class="text-on-surface">Employer</span>.
+                        </div>
+                        <div class="caption2 fw-400 mt-4">05 min ago</div>
                       </div>
                     </div>
-                    <div class="sub-notification-item icon-plus">
-                      <div class="time">Last day</div>
-                      <div class="content">
-                        Your submit job <span class="name">Graphic Design</span> is
-                        <span class="status">Success</span>
+                    <div class="sub-notification-item d-flex gap-12 mt-12 pb-12">
+                      <div class="left">
+                        <i class="icon-mail-envelope-closed bg-surface bora-50 p-6 d-block"></i>
+                      </div>
+                      <div class="right">
+                        <div class="text-subtitle">Undo Rejected</div>
+                        <div class="caption2 text-secondary mt-4">The application is undo rejected on your job
+                          <span class="text-on-surface">Social Media Marketing</span> by
+                          <span class="text-on-surface">Employer</span>.
+                        </div>
+                        <div class="caption2 fw-400 mt-4">05 min ago</div>
                       </div>
                     </div>
-                    <div class="sub-notification-item icon-plus">
-                      <div class="time">5 Day ago</div>
-                      <div class="content">
-                        A new application is submitted on your job
-                        <span class="name">Graphic Design</span> by
-                        <span class="name">Maverick Nguyen</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="sub-notification-button">
-                    <a href="#!">Read All</a>
                   </div>
                 </div>
               </div>
@@ -813,13 +435,19 @@
                 </div>
                 <div class="sub-account">
                   <div class="sub-account-item">
-                    <a href="dashboard/candidates-dashboard.html"><span class="icon-dashboard"></span>Dashboard</a>
+                    <div class="flex-item-center gap-12">
+                      <i class="icon-search"></i>
+                      <input type="text" placeholder="Search">
+                    </div>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="dashboard/candidates-dashboard.html"><span class="icon-dashboard"></span>Overview</a>
                   </div>
                   <div class="sub-account-item">
                     <a href="dashboard/candidates-profile-setting.html"><span class="icon-profile"></span> Profile</a>
                   </div>
                   <div class="sub-account-item">
-                    <a href="dashboard/candidates-resumes.html"><span class="icon-resumes"></span> Resumes</a>
+                    <a href="dashboard/candidates-resumes.html"><span class="icon-resumes"></span> My CV</a>
                   </div>
                   <div class="sub-account-item">
                     <a href="dashboard/candidates-my-applied.html"><span class="icon-my-apply"></span> My Applied</a>
@@ -828,15 +456,23 @@
                     <a href="dashboard/candidates-save-jobs.html"><span class="icon-work"></span> Saved Jobs</a>
                   </div>
                   <div class="sub-account-item">
-                    <a href="dashboard/candidates-alerts-jobs.html"><span class="icon-bell1"></span> Candidate
-                      Alerts</a>
-                  </div>
-                  <div class="sub-account-item">
-                    <a href="dashboard/candidates-messages.html"><span class="icon-chat"></span> Messages</a>
+                    <a href="dashboard/candidates-following-employers.html"><span class="icon-following"></span>
+                      Following Employers</a>
                   </div>
                   <div class="sub-account-item">
                     <a href="dashboard/candidates-following-employers.html"><span class="icon-following"></span>
-                      Following Employers</a>
+                      My Connections</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="dashboard/candidates-alerts-jobs.html"><span class="icon-bell1"></span> Job
+                      Alerts</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="dashboard/candidates-following-employers.html"><span class="icon-following"></span>
+                      My Packages</a>
+                  </div>
+                  <div class="sub-account-item">
+                    <a href="dashboard/candidates-messages.html"><span class="icon-chat"></span> Messages</a>
                   </div>
                   <div class="sub-account-item">
                     <a href="dashboard/candidates-meetings.html"><span class="icon-meeting"></span> Meeting</a>
@@ -856,7 +492,7 @@
                 </div>
               </div>
               <div class="header-customize-item button">
-                <a href="dashboard/candidates-resumes.html">Upload Resume</a>
+                <a href="dashboard/candidates-resumes.html">Post Your CV</a>
               </div>
             </div>
             <div class="nav-filter">
@@ -878,7 +514,7 @@
               <ul>
                 <li><a href="index.html
 ">Home</a></li>
-                <li><a href="#!">Term Of Use</a></li>
+                <li><a href="#!">Terms and Conditions of JobFii</a></li>
               </ul>
             </div>
           </div>
@@ -888,134 +524,98 @@
   </section>
 
 
-  <section class="term-section">
+  <section class="term-section pt-60 pb-60">
     <div class="tf-container">
-      <div class="row tf-tab">
-        <div class="col-lg-4">
-          <ul class="menu-tab tab-term po-sticky">
-            <li class="ct-tab">1. Terms </li>
-            <li class="ct-tab active">2. Limitations </li>
-            <li class="ct-tab">3. Revisions and errata</li>
-            <li class="ct-tab">4. Site terms of use modifications</li>
-            <li class="ct-tab">5. Risks</li>
+      <div class="row row-gap-32">
+        <div class="col-lg-4 section-fixed-sidebar">
+          <ul class="menu-tab tab-term text-content">
+            <li class="ct-tab active"><a class="heading7" href="#use">1. Use of the Platform</a></li>
+            <li class="ct-tab"><a class="heading7" href="#privacy">2. Privacy Policy</a></li>
+            <li class="ct-tab"><a class="heading7" href="#user">3. User Content</a></li>
+            <li class="ct-tab"><a class="heading7" href="#job">4. Job Listings and Applications</a></li>
+            <li class="ct-tab"><a class="heading7" href="#disclaimers">5. Disclaimers and Limitations of Liability</a>
+            </li>
+            <li class="ct-tab"><a class="heading7" href="#termination">6. Termination</a></li>
+            <li class="ct-tab"><a class="heading7" href="#governing">7. Governing Law</a></li>
+            <li class="ct-tab"><a class="heading7" href="#changes">8. Changes to Terms</a></li>
+            <li class="ct-tab"><a class="heading7" href="#contact">9. Contact Us</a></li>
           </ul>
         </div>
-        <div class="col-lg-8">
+        <div class="col-lg-8 pl-45 pl-col-lg-0">
+          <div class="heading4">Terms and Conditions of JobFii</div>
+          <div class="body3 text-secondary mt-12">Last Updated: 22-09-2023</div>
+          <div id="use" class="body3 text-secondary mt-12">Please read these Terms and Conditions ("Terms") carefully
+            before
+            using JobFii, an online job portal (the "Platform") operated by Kidiley Employment Services LLC
+            ("we," "our," or "us"). By using JobFii, you agree to comply with and be bound by these Terms. If you do not
+            agree with these Terms, please do not use the Platform.</div>
           <div class="content-tab">
             <div class="term-content">
-              <h4>Terms of use</h4>
-              <h6>1. Terms </h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed euismod justo, sit amet efficitur
-                dui. Aliquam sodales vestibulum velit, eget sollicitudin quam. Donec non aliquam eros. Etiam sit amet
-                lectus vel justo dignissim condimentum.</p>
-              <p>In malesuada neque quis libero laoreet posuere. In consequat vitae ligula quis rutrum. Morbi dolor
-                orci, maximus a pulvinar sed, bibendum ac lacus. Suspendisse in consectetur lorem. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam elementum, est sed
-                interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu nulla. Donec rhoncus in purus quis
-                blandit.</p>
-              <p class="mgb-32">Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum.
-                Nullam vel eleifend est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie</p>
-              <h6>2. Limitations</h6>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a, finibus nec ex.</p>
-              <ul class="list-dot">
-                <li> Aliquam elementum, est sed interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu
-                  nulla. Donec rhoncus in purus quis blandit.</li>
-                <li> Etiam eleifend metus at nunc ultricies facilisis.</li>
-                <li> Nullam vel eleifend est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a,
-                  finibus nec ex.</li>
-              </ul>
-              <p class="mgb-32">Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum.
-                Nullam vel eleifend est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie</p>
-              <h6>3. Revisions and errata</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed euismod justo, sit amet efficitur
-                dui. Aliquam sodales vestibulum velit, eget sollicitudin quam. Donec non aliquam eros. Etiam sit amet
-                lectus vel justo dignissim condimentum.</p>
-              <p>In malesuada neque quis libero laoreet posuere. In consequat vitae ligula quis rutrum. Morbi dolor
-                orci, maximus a pulvinar sed, bibendum ac lacus. Suspendisse in consectetur lorem. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam elementum, est sed
-                interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu nulla. Donec rhoncus in purus quis
-              </p>
-              <p class="mgb-32">Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum.
-                Nullam vel eleifend est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a,
-                finibus nec ex.</p>
-              <h6>4. Site terms of use modifications</h6>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a, finibus nec ex.</p>
-              <ul class="list-dot">
-                <li> Aliquam elementum, est sed interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu
-                  nulla. Donec rhoncus in purus quis blandit.</li>
-                <li> Etiam eleifend metus at nunc ultricies facilisis.</li>
-                <li> Nullam vel eleifend est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a,
-                  finibus nec ex.</li>
-              </ul>
-              <p class="mgb-32">Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum.
-                Nullam vel eleifend est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie</p>
-              <h6>5. Risks</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed euismod justo, sit amet efficitur
-                dui. Aliquam sodales vestibulum velit, eget sollicitudin quam. Donec non aliquam eros. Etiam sit amet
-                lectus vel justo dignissim condimentum.</p>
-              <p>In malesuada neque quis libero laoreet posuere. In consequat vitae ligula quis rutrum. Morbi dolor
-                orci, maximus a pulvinar sed, bibendum ac lacus. Suspendisse in consectetur lorem. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam elementum, est sed
-                interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu nulla. Donec rhoncus in purus quis
-                blandit.</p>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie </p>
-            </div>
-            <div class="term-content">
-              <h6>2. Limitations</h6>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a, finibus nec ex.</p>
-              <ul class="list-dot">
-                <li> Aliquam elementum, est sed interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu
-                  nulla. Donec rhoncus in purus quis blandit.</li>
-                <li> Etiam eleifend metus at nunc ultricies facilisis.</li>
-                <li> Nullam vel eleifend est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a,
-                  finibus nec ex.</li>
-              </ul>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie</p>
-            </div>
-            <div class="term-content">
-              <h6>3. Revisions and errata</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed euismod justo, sit amet efficitur
-                dui. Aliquam sodales vestibulum velit, eget sollicitudin quam. Donec non aliquam eros. Etiam sit amet
-                lectus vel justo dignissim condimentum.</p>
-              <p>In malesuada neque quis libero laoreet posuere. In consequat vitae ligula quis rutrum. Morbi dolor
-                orci, maximus a pulvinar sed, bibendum ac lacus. Suspendisse in consectetur lorem. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam elementum, est sed
-                interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu nulla. Donec rhoncus in purus quis
-              </p>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a, finibus nec ex.</p>
-            </div>
-            <div class="term-content">
-              <h6>4. Site terms of use modifications</h6>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a, finibus nec ex.</p>
-              <ul class="list-dot">
-                <li> Aliquam elementum, est sed interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu
-                  nulla. Donec rhoncus in purus quis blandit.</li>
-                <li> Etiam eleifend metus at nunc ultricies facilisis.</li>
-                <li> Nullam vel eleifend est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie a,
-                  finibus nec ex.</li>
-              </ul>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie</p>
-            </div>
-            <div class="term-content">
-              <h6>5. Risks</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sed euismod justo, sit amet efficitur
-                dui. Aliquam sodales vestibulum velit, eget sollicitudin quam. Donec non aliquam eros. Etiam sit amet
-                lectus vel justo dignissim condimentum.</p>
-              <p>In malesuada neque quis libero laoreet posuere. In consequat vitae ligula quis rutrum. Morbi dolor
-                orci, maximus a pulvinar sed, bibendum ac lacus. Suspendisse in consectetur lorem. Pellentesque habitant
-                morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam elementum, est sed
-                interdum cursus, felis ex pharetra nisi, ut elementum tortor urna eu nulla. Donec rhoncus in purus quis
-                blandit.</p>
-              <p>Etiam eleifend metus at nunc ultricies facilisis. Morbi finibus tristique interdum. Nullam vel eleifend
-                est, eu posuere risus. Vestibulum ligula ex, ullamcorper sit amet molestie </p>
+              <div class="pt-40">
+                <div class="heading6 pb-12">1. Use of the Platform</div>
+                <p>a. Eligibility: You must be at least 18 years old and have the legal capacity to enter into these
+                  Terms.</p>
+                <p>b. Account Creation: You may need to create an account to access certain features of the Platform.
+                  You are responsible for maintaining the confidentiality of your account information and for all
+                  activities that occur under your account.</p>
+                <p id="privacy">c. Acceptable Use: You agree not to use the Platform for any unlawful or prohibited
+                  purpose. This includes but is not limited to: Providing false or misleading information. Harassing,
+                  intimidating, or infringing upon the rights of others. Uploading or transmitting viruses, malware, or
+                  harmful code. Attempting to gain unauthorized access to the Platform or its systems.</p>
+              </div>
+              <div class="pt-32">
+                <div class="heading6 pb-12">2. Privacy Policy</div>
+                <p id="user">Your use of the Platform is also governed by our Privacy Policy, which can be found
+                  www.jobfii.com/privacypolicy. Please review this policy to understand how we collect, use, and protect
+                  your data.</p>
+              </div>
+              <div class="pt-32">
+                <div class="heading6 pb-12">3. User Content</div>
+                <p>a. Ownership: You retain ownership of any content you submit to the Platform, including resumes, job
+                  listings, messages, and comments ("User Content").</p>
+                <p id="job">b. License: By submitting User Content, you grant us a non-exclusive, worldwide,
+                  royalty-free, transferable license to use, reproduce, modify, distribute, and display the User Content
+                  in connection with the Platform's operation.</p>
+              </div>
+              <div class="pt-32">
+                <div class="heading6 pb-12">4. Job Listings and Applications</div>
+                <p>a. Ownership: You retain ownership of any content you submit to the Platform, including resumes, job
+                  listings, messages, and comments ("User Content").</p>
+                <p id="disclaimers">b. License: By submitting User Content, you grant us a non-exclusive, worldwide,
+                  royalty-free, transferable license to use, reproduce, modify, distribute, and display the User Content
+                  in connection with the Platform's operation.</p>
+              </div>
+              <div class="pt-32">
+                <div class="heading6 pb-12">5. Disclaimers and Limitations of Liability</div>
+                <p>a. No Warranty: The Platform is provided "as is" and without warranties of any kind, whether express
+                  or implied.</p>
+                <p id="termination">b. Limitation of Liability: We are not liable for any indirect, incidental, special,
+                  consequential, or punitive damages, or any loss of profits or revenues, whether incurred directly or
+                  indirectly.</p>
+              </div>
+              <div class="pt-32">
+                <div class="heading6 pb-12">6. Termination</div>
+                <p id="governing">We may suspend or terminate your access to the Platform at our discretion, with or
+                  without notice, if we believe you have violated these Terms or for any other reason.</p>
+              </div>
+              <div class="pt-32">
+                <div class="heading6 pb-12">7. Governing Law</div>
+                <p id="changes">These Terms are governed by and construed in accordance with the laws of United Arab
+                  Emirates Abu Dhabi Jurisdiction & International Laws Jurisdiction of any country, without regard to
+                  its conflict of law principles.</p>
+              </div>
+              <div class="pt-32">
+                <div class="heading6 pb-12">8. Changes to Terms</div>
+                <p id="contact">We reserve the right to modify these Terms at any time. We will notify you of
+                  significant changes through the Platform or by email.</p>
+              </div>
+              <div class="pt-32">
+                <div class="heading6 pb-12">9. Contact Us</div>
+                <p>If you have questions or concerns about these Terms, please contact us at contact@jobfii.com.</p>
+                <p>By using JobFii, you agree to these Terms and our Privacy Policy. Your continued use of the Platform
+                  constitutes your acceptance of any updates to these Terms.
+                  Kidiley Employment Services LLC</p>
+              </div>
             </div>
           </div>
         </div>
@@ -1023,26 +623,127 @@
     </div>
   </section>
 
+  <!-- wd-partner -->
+  <section>
+    <div class="wd-partner">
+      <div class="tf-container">
+        <h1 class="title-partner">
+          Over 5,000 Recruiters use JobFii
+        </h1>
+        <div class="list-partner-block">
+          <div class="list-partner">
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/Nike.svg" alt="partner-img">
+              </a>
+            </div>
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/adidas.svg" alt="partner-img">
+              </a>
+            </div>
+
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/fly.svg" alt="partner-img">
+              </a>
+            </div>
+
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/etihad.svg" alt="partner-img">
+              </a>
+            </div>
+
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/tata.svg" alt="partner-img">
+              </a>
+            </div>
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/adnoc.svg" alt="partner-img">
+              </a>
+            </div>
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/bp.svg" alt="partner-img">
+              </a>
+            </div>
+
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/wipro.svg" alt="partner-img">
+              </a>
+            </div>
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/reliance.svg" alt="partner-img">
+              </a>
+            </div>
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/max.svg" alt="partner-img">
+              </a>
+            </div>
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/cnpc.svg" alt="partner-img">
+              </a>
+            </div>
+            <div class="partner-item h-100 flex-center">
+              <a href="#!" class="logo-partner flex-center">
+                <img class="" src="images/partners/adnoc.svg" alt="partner-img">
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--End wd-partner -->
   <footer class="footer">
     <div class="top-footer">
       <div class="tf-container">
-        <div class="row">
-          <div class="col-lg-2 col-md-4">
-            <div class="footer-logo">
-              <img src="images/logo.png" alt="images">
+        <div class="main-content border-bottom pb-20">
+          <div class="row">
+            <div class="col-lg-2 col-md-4">
+              <div class="footer-logo">
+                <a href="index.html">
+                  <img src="images/logo.png" alt="images">
+                </a>
+              </div>
             </div>
-          </div>
-          <div class="col-lg-10 col-md-8">
-            <div class="wd-social d-flex aln-center">
-              <span>Follow Us:</span>
-              <ul class="list-social d-flex aln-center">
-                <li><a href="#!"><i class="icon-facebook"></i></a></li>
-                <li><a href="#!"><i class="icon-linkedin2"></i></a></li>
-                <li><a href="#!"><i class="icon-twitter"></i></a></li>
-                <li><a href="#!"><i class="icon-pinterest"></i></a></li>
-                <li><a href="#!"><i class="icon-instagram1"></i></a></li>
-                <li><a href="#!"><i class="icon-youtube"></i></a></li>
-              </ul>
+            <div class="col-lg-10 col-md-8">
+              <div class="wd-social d-flex aln-center">
+                <span>Follow Us:</span>
+                <ul class="list-social d-flex aln-center">
+                  <li><a href="#!"><i class="icon-linkedin2"></i></a></li>
+                  <li><a href="#!"><i class="icon-facebook"></i></a></li>
+                  <li><a href="#!"><i class="icon-instagram1"></i></a></li>
+                  <li><a href="#!" class="d-block twitter">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path
+                          d="M0 20.4326C0 31.4783 8.95431 40.4326 20 40.4326C31.0457 40.4326 40 31.4783 40 20.4326C40 9.38692 31.0457 0.432617 20 0.432617C8.95431 0.432617 0 9.38692 0 20.4326Z"
+                          fill="none" />
+                        <path
+                          d="M12.039 12.9448L18.2164 21.2046L12 27.9202H13.3991L18.8415 22.0406L23.2389 27.9202H28L21.475 19.1958L27.2612 12.9448H25.8621L20.8499 18.3598L16.8001 12.9448H12.039ZM14.0964 13.9754H16.2837L25.9422 26.8895H23.755L14.0964 13.9754Z"
+                          fill="black" />
+                      </svg>
+                    </a></li>
+                  <li><a href="#!">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="17" viewBox="0 0 14 17" fill="121212">
+                        <path
+                          d="M10.7944 7.84831C10.7255 7.81528 10.6555 7.78348 10.5846 7.75304C10.4611 5.47747 9.21767 4.1747 7.12983 4.16137C7.12037 4.16131 7.11097 4.16131 7.10151 4.16131C5.85271 4.16131 4.8141 4.69436 4.17484 5.66434L5.32309 6.45202C5.80064 5.72748 6.55011 5.57302 7.10206 5.57302C7.10843 5.57302 7.11483 5.57302 7.12114 5.57308C7.80859 5.57746 8.32734 5.77733 8.66309 6.16712C8.90742 6.45089 9.07084 6.84303 9.15176 7.33793C8.54226 7.23434 7.88309 7.20249 7.17842 7.24289C5.1934 7.35723 3.91727 8.51494 4.00297 10.1236C4.04647 10.9396 4.45298 11.6416 5.14759 12.1002C5.73487 12.4879 6.49126 12.6775 7.27737 12.6345C8.31551 12.5776 9.12992 12.1815 9.69809 11.4573C10.1296 10.9073 10.4025 10.1945 10.523 9.29645C11.0178 9.59503 11.3844 9.98795 11.5869 10.4603C11.9313 11.2632 11.9513 12.5826 10.8748 13.6583C9.93151 14.6006 8.79767 15.0083 7.08413 15.0209C5.18336 15.0068 3.74582 14.3972 2.81118 13.209C1.93597 12.0965 1.48365 10.4895 1.46677 8.43262C1.48365 6.37577 1.93597 4.76875 2.81118 3.65618C3.74582 2.46803 5.18333 1.85845 7.08411 1.84433C8.99867 1.85856 10.4613 2.47107 11.4317 3.66495C11.9075 4.25042 12.2663 4.98668 12.5028 5.84514L13.8483 5.48613C13.5617 4.42947 13.1106 3.51893 12.4968 2.76378C11.2527 1.23317 9.43317 0.44888 7.0888 0.432617H7.07942C4.73981 0.448823 2.94068 1.2361 1.73203 2.77256C0.656499 4.13982 0.101708 6.04226 0.0830661 8.42699L0.0830078 8.43262L0.0830661 8.43824C0.101708 10.823 0.656499 12.7255 1.73203 14.0927C2.94068 15.6291 4.73981 16.4165 7.07942 16.4326H7.0888C9.16884 16.4182 10.635 15.8736 11.8428 14.6669C13.4231 13.0881 13.3755 11.1092 12.8547 9.89437C12.481 9.0232 11.7686 8.31563 10.7944 7.84831ZM7.20305 11.2249C6.33305 11.2739 5.42921 10.8834 5.38464 10.047C5.35161 9.42678 5.82599 8.73478 7.25644 8.65235C7.42026 8.6429 7.58101 8.63828 7.73892 8.63828C8.25851 8.63828 8.74459 8.68876 9.18651 8.78537C9.02167 10.8439 8.05484 11.1781 7.20305 11.2249Z"
+                          fill="black" />
+                      </svg>
+                    </a></li>
+                  <li><a href="#!"><i class="ph-fill ph-tiktok-logo"></i></a></li>
+                  <li><a href="#!"><i class="icon-youtube"></i></a></li>
+                  <li><a href="#!"><i class="ph-fill ph-snapchat-logo"></i></a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -1050,9 +751,9 @@
     </div>
     <div class="inner-footer">
       <div class="tf-container">
-        <div class="row">
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-cl-1">
+        <div class="row row-gap-24">
+          <div class="col-xl-4 col-lg-8 col-md-10">
+            <div class="footer-cl-1 pr-80">
               <div class="icon-infor d-flex aln-center">
                 <div class="icon">
                   <span class="icon-call-calling"><span class="path1"></span><span class="path2"></span><span
@@ -1063,8 +764,9 @@
                   <h6><a href="tel:0123456678">001-1234-88888</a></h6>
                 </div>
               </div>
-              <p>Job Searching Just Got Easy. Use Jobtex to run a hiring site and earn money in the process!</p>
-              <div class="ft-icon"> <i class="icon-map-pin"></i> 101 E 129th St, East Chicago, IN 46312, US</div>
+              <p>Job Searching and Hiring got easy. Use JobFii to Find Jobs / Hire Creatives</p>
+              <div class="ft-icon"> <i class="icon-map-pin"></i> Al Otaiba Tower, C11A, Electra Street, Abu Dhabi, UAE
+              </div>
               <form action="#" id="subscribe-form">
                 <input type="email" placeholder="Your email address" required="" id="subscribe-email">
                 <button class="tf-button" type="submit" id="subscribe-button"><i
@@ -1072,60 +774,80 @@
               </form>
             </div>
           </div>
-          <div class="col-lg-2 col-md-6 col-6">
-            <div class="footer-cl-2">
-              <h6 class="ft-title">
-                Quick Links
-              </h6>
-              <ul class="navigation-menu-footer">
-                <li> <a href="find-jobs-list.html">Job Packages</a> </li>
-                <li> <a href="find-jobs-list.html">Post New Job</a> </li>
-                <li> <a href="find-jobs-list.html">Jobs Listing</a> </li>
-                <li> <a href="find-jobs-list.html">Jobs Style Grid</a> </li>
-                <li> <a href="employers-list.html">Employer Listing</a> </li>
-                <li> <a href="employers-grid-fullwidth.html">Employers Grid</a> </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="footer-cl-3">
-              <h6 class="ft-title">
-                For Candidates
-              </h6>
-              <ul class="navigation-menu-footer">
-                <li> <a href="dashboard.html">User Dashboard</a> </li>
-                <li> <a href="sample-cv.html">CV Packages</a> </li>
-                <li> <a href="candidate-list-sidebar.html">Candidate Listing</a> </li>
-                <li> <a href="candidate-grid.html">Candidates Grid</a> </li>
-                <li> <a href="about-us.html">About us</a> </li>
-                <li> <a href="contact-us.html">Contact us </a> </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="footer-cl-4">
-              <h6 class="ft-title">
-                For Employers
-              </h6>
-              <ul class="navigation-menu-footer">
-                <li> <a href="find-jobs-list.html">Post New Job</a> </li>
-                <li> <a href="employers-list.html">Employer Listing</a> </li>
-                <li> <a href="employers-grid-sidebar.html">Employers Grid</a> </li>
-                <li> <a href="find-jobs-list.html">Job Packages</a> </li>
-                <li> <a href="find-jobs-list.html">Jobs Listing</a> </li>
-                <li> <a href="find-jobs-grid.html">Jobs Style Grid</a> </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-lg-2 col-md-4 col-6">
-            <div class="footer-cl-5">
-              <h6 class="ft-title">
-                Download App
-              </h6>
-              <ul class="ft-download">
-                <li> <a href="#!"><img src="images/review/btn3.png" alt="images"></a></li>
-                <li> <a href="#!"><img src="images/review/btn4.png" alt="images"></a></li>
-              </ul>
+          <div class="col-xl-8 col-lg-12 list-link-footer">
+            <div class="row row-gap-24">
+              <div class="col-xxl-10 col-md-9">
+                <div class="row row-gap-24">
+                  <div class="col-md-4 col-6">
+                    <div class="footer-cl-2">
+                      <h6 class="ft-title">
+                        Quick Links
+                      </h6>
+                      <ul class="navigation-menu-footer">
+                        <li> <a href="about-us.html">About us</a> </li>
+                        <li> <a href="accordion-page.html">FAQS</a> </li>
+                        <li> <a href="pricing.html">Pricing</a> </li>
+                        <li> <a href="shop.html">Shop</a>
+                          <span class="bg-purple text-white caption2 pl-12 pr-12">Popular</span>
+                        </li>
+                        <li> <a href="blog.html">Blog</a> </li>
+                        <li> <a href="contact-us.html">Contact us</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6">
+                    <div class="footer-cl-3">
+                      <h6 class="ft-title">
+                        For Candidates
+                      </h6>
+                      <ul class="navigation-menu-footer">
+                        <li> <a href="dashboard/candidates-dashboard.html">Dashboard</a> </li>
+                        <li> <a href="sample-cv.html">CV Building</a>
+                          <span class="bg-purple text-white caption2 pl-12 pr-12">Popular</span>
+                        </li>
+                        <li> <a href="candidate-grid-sidebar.html">Candidate Listing</a> </li>
+                        <li> <a href="candidate-half-map.html">Candidate Map</a> </li>
+                        <li> <a href="find-jobs-grid-sidebar.html">Jobs Listing</a> </li>
+                        <li> <a href="find-jobs-half-map2.html">Jobs Map</a> </li>
+                        <li> <a href="freelancer.html">Freelancer</a>
+                          <span class="bg-purple text-white caption2 pl-12 pr-12">Popular</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-md-4 col-6">
+                    <div class="footer-cl-4">
+                      <h6 class="ft-title">
+                        For Employers
+                      </h6>
+                      <ul class="navigation-menu-footer">
+                        <li> <a href="dashboard/employer-dashboard.html">Dashboard</a> </li>
+                        <li> <a href="dashboard/employer-post-new-job.html">Post New Job</a>
+                          <span class="bg-purple text-white caption2 pl-12 pr-12">Popular</span>
+                        </li>
+                        <li> <a href="employers-package.html">Job Packages</a> <span
+                            class="bg-purple text-white caption2 pl-12 pr-12">Popular</span></li>
+                        <li> <a href="employers-grid-sidebar.html">Employers Listing</a> </li>
+                        <li> <a href="employers-half-map.html">Employers Map</a> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-2 col-md-3 col-6">
+                <div class="d-flex justify-content-end">
+                  <div class="footer-cl-5 d-inline-block">
+                    <h6 class="ft-title">
+                      Download App
+                    </h6>
+                    <ul class="ft-download">
+                      <li> <a href="#!"><img class="" src="images/review/btn3.png" alt="images"></a></li>
+                      <li> <a href="#!"><img class="" src="images/review/btn4.png" alt="images"></a></li>
+                      <li> <a href="#!"><img class="" src="images/review/btn5.png" alt="images"></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1133,24 +855,26 @@
     </div>
     <div class="bottom">
       <div class="tf-container">
-        <div class="row">
-          <div class="col-lg-6 col-md-6">
-            <div class="bt-left">
-              <div class="copyright">©2023 Jobfii. All Rights Reserved.</div>
-              <div class="select-language">
-                <div class="dropdown" id="language">
-                  <a class="btn-selector nolink input-form"><span><img src="images/review/flag.png" alt=""></span>
-                    English</a>
+        <div class="content border-top pt-12 pb-12">
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <div class="bt-left">
+                <div class="copyright">©2023 Jobfii. All Rights Reserved.</div>
+                <div class="select-language">
+                  <div class="dropdown" id="language">
+                    <a class="btn-selector nolink input-form"><span><img src="images/review/flag.png" alt=""></span>
+                      English</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-6 col-md-6">
-            <ul class="menu-bottom d-flex aln-center">
-              <li><a href="term-of-use.html">Terms Of Services</a> </li>
-              <li><a href="pricing.html">Privacy Policy</a> </li>
-              <li><a href="contact-us.html">Cookie Policy</a> </li>
-            </ul>
+            <div class="col-lg-6 col-md-6">
+              <ul class="menu-bottom d-flex aln-center">
+                <li><a href="term-of-use.html">Terms Of Services</a> </li>
+                <li><a href="privacy-policy.html">Privacy Policy</a> </li>
+                <li><a href="cookie-policy.html">Cookie Policy</a> </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -1165,6 +889,7 @@
   <script src='javascript/wow.min.js'></script>
   <script src="javascript/range-side.js"></script>
   <script src='javascript/swiper.js'></script>
+  <script src='javascript/slick.min.js'></script>
   <script src='javascript/jquery.nice-select.min.js'></script>
   <script src="javascript/phosphor-icons.js"></script>
   <script src="javascript/main.js"></script>

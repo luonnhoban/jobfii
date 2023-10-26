@@ -224,7 +224,7 @@
                 });
               });
           }
-          a = 1;
+          a = 0.1;
         }
       });
     }
@@ -1092,6 +1092,7 @@ const slickSlider = document.querySelectorAll('.slick-track');
 
 // Đặt chiều cao cho các job-category-main
 window.onload = () => {
+  console.log(slickSlider);
   if (slickSlider) {
     slickSlider.forEach(slider => {
       // Lấy tất cả các job-category-main
@@ -1206,6 +1207,85 @@ $('.list-thumb').slick({
   ]
 });
 
+
+/* List testimonials About us
+  ------------------------------------------------------------------------------------- */
+
+$('.list-testimonials').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  arrows: false,
+  dots: true,
+  touchThreshold: 1000,
+  swipe: true,
+  swipeToSlide: true,
+  // autoplay: false,
+  centerMode: true,
+  centerPadding: '190px',
+  pauseOnFocus: false,
+  pauseOnHover: false,
+  pauseOnDotsHover: false,
+  responsive: [
+    {
+      breakpoint: 1600,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 4,
+      }
+    },
+    {
+      breakpoint: 1440,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+      }
+    },
+    {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    },
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        centerMode: true,
+        centerPadding: '80px',
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '150px',
+      }
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '60px',
+      }
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerPadding: '36px',
+      }
+    },
+  ]
+});
+
+
 // Remove position sticky form-sticky apply job in detail page
 // Get formSticky and list partners
 const formSticky = document.querySelector('.form-sticky');
@@ -1305,5 +1385,63 @@ if (verifyEmailModal) {
 if (verifyEmailModalContainer) {
   verifyEmailModalContainer.addEventListener('click', function (event) {
     event.stopPropagation()
+  })
+}
+
+
+
+// Fixed sidebar in Term of use
+const sectionFixed = document.querySelector('.section-fixed-sidebar');
+const divToFix = document.querySelector('.section-fixed-sidebar .text-content');
+
+if (sectionFixed && divToFix) {
+  // Listen event scroll mouse
+  window.addEventListener('scroll', () => {
+    const sectionFixedRect = sectionFixed.getBoundingClientRect();
+    const divToFixRect = divToFix.getBoundingClientRect();
+
+    if (sectionFixedRect.top <= 20) {
+      // When divToFixRect is 20px from the top of the page, 
+      // add class "fixed-top" to divToFix need to fixed-top.
+      divToFix.classList.add('fixed-top');
+    } else {
+      // Remove class "fixed-top".
+      divToFix.classList.remove('fixed-top');
+    }
+
+    // Space from sectionFixed bottom to divToFix bottom
+    const distanceToBottom = sectionFixedRect.bottom - divToFixRect.bottom;
+
+    // if space from sectionFixed bottom to divToFix bottom less than or equal to 0,
+    // Remove class fixed-top, add class fixed-bottom
+    if (distanceToBottom <= 0) {
+      divToFix.classList.add('fixed-bottom');
+      divToFix.classList.remove('fixed-top');
+    }
+  });
+
+  // Listen for mouse scroll events
+  window.addEventListener('scroll', () => {
+    const sectionFixedRect = sectionFixed.getBoundingClientRect();
+    const divToFixRect = divToFix.getBoundingClientRect();
+
+    if (sectionFixedRect.top <= 20 && divToFixRect.top >= 20) {
+      divToFix.classList.add('fixed-top');
+      divToFix.classList.remove('fixed-bottom');
+    }
+  })
+}
+
+
+// add, remove active list term
+const termItems = document.querySelectorAll('.tab-term .ct-tab')
+const listTerm = document.querySelector('.tab-term')
+
+if (termItems) {
+  termItems.forEach(item => {
+    item.addEventListener('click', () => {
+      listTerm.querySelector('.active').classList.remove('active')
+      item.classList.add('active')
+    })
   })
 }
