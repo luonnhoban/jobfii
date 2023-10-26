@@ -1346,44 +1346,55 @@ function removeOpenAnswer(index1) {
 }
 
 
-// Open Modal verify email 
-const registerBtn = document.querySelectorAll('.register-btn')
-const verifyEmailModal = document.querySelector('.modal-verify-email-block')
-const verifyEmailModalContainer = document.querySelector('.modal-verify-email-main')
-const closeVerifyEmail = document.querySelector('.verify-email-close')
+// Open Modal pop up 
+const modalPopup = document.querySelector('.modal-popup')
+const modalPopupContainer = document.querySelector('.modal-popup-main')
+const closeModalBtn = document.querySelector('.modal-close')
 
-//Function show modal verifyEmail
-function showVerifyEmailModal() {
-  verifyEmailModal.classList.add('open')
-  document.querySelector('body').style.overflow = 'hidden'
+//Function show modal
+function showModalPopup() {
+  modalPopup.classList.add('open')
+  document.querySelector('html').style.overflow = 'hidden'
 }
 
-//Function close modal verifyEmail
-function removeVerifyEmailModal() {
-  verifyEmailModal.classList.remove('open')
-  document.querySelector('body').style.overflow = 'unset'
+//Function close modal
+function removeModalPopup() {
+  modalPopup.classList.remove('open')
+  document.querySelector('html').style.overflow = 'unset'
 }
 
 // listen event click bag icon on header menu
+const registerBtn = document.querySelectorAll('.register-btn')
 if (registerBtn) {
   registerBtn.forEach(btn => {
-    btn.addEventListener('click', showVerifyEmailModal)
+    btn.addEventListener('click', showModalPopup)
   })
 }
 
-//listen event click and close modal verifyEmail
-if (closeVerifyEmail) {
-  closeVerifyEmail.addEventListener('click', removeVerifyEmailModal)
+// listen event click on freelancer item
+const freelancerItems = document.querySelectorAll('.freelancer-item .candidate-infor')
+if(freelancerItems) {
+  freelancerItems.forEach(item => {
+    item.addEventListener('click', (e) => {
+      e.preventDefault
+      showModalPopup()
+    })
+  })
 }
 
-//listen event click outside modal-container and close modal verifyEmail
-if (verifyEmailModal) {
-  verifyEmailModal.addEventListener('click', removeVerifyEmailModal)
+//listen event click and close modal
+if (closeModalBtn) {
+  closeModalBtn.addEventListener('click', removeModalPopup)
 }
 
-//Stop prevent default when click on container modal verifyEmail
-if (verifyEmailModalContainer) {
-  verifyEmailModalContainer.addEventListener('click', function (event) {
+//listen event click outside modal-container and close modal
+if (modalPopup) {
+  modalPopup.addEventListener('click', removeModalPopup)
+}
+
+//Stop prevent default when click on container modal
+if (modalPopupContainer) {
+  modalPopupContainer.addEventListener('click', function (event) {
     event.stopPropagation()
   })
 }
@@ -1443,5 +1454,28 @@ if (termItems) {
       listTerm.querySelector('.active').classList.remove('active')
       item.classList.add('active')
     })
+  })
+}
+
+
+// Show more list testimonials
+const loadmoreBtn = document.querySelector('.load-more-btn button')
+const listReviews = document.querySelectorAll('.list-review')
+
+if (loadmoreBtn) {
+  loadmoreBtn.addEventListener('click', () => {
+    listReviews.forEach(list => {
+      if (list.classList.contains('d-none')) {
+        const parentBtn = loadmoreBtn.parentElement
+
+        setTimeout(() => {
+          list.classList.remove('d-none')
+          parentBtn.classList.add('d-none')
+        }, 700)
+      }
+    })
+
+    loadmoreBtn.querySelector('i').classList.remove('d-none')
+    loadmoreBtn.querySelector('span').style.opacity = '0'
   })
 }

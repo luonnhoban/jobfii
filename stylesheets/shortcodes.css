@@ -1349,11 +1349,41 @@
 }
 
 /* widget testimonials */
+.testimonial-item {
+  height: 100%;
+}
+
+.load-more-btn button {
+  position: relative;
+}
+
+.load-more-btn button i {
+  animation: spinCircle linear 1s infinite;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+@keyframes spinCircle {
+  0% {
+    transform: translate(-50%, -50%) rotate(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
 .wd-testimonials {
   box-shadow: 0px 10px 25px 0px rgba(103, 40, 208, 0.1);
   border-radius: 20px;
   background: #fff;
   padding: 40px 40px 40px 40px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .wd-testimonials .description {
@@ -11017,6 +11047,76 @@ input[type="number"]::-webkit-inner-spin-button {
   .freelancer-item.wd-thum-career .career-header-right {
     padding: 0;
   }
+}
+
+/* freelancer popup candidate */
+.popup-candidate-infor {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all ease-in-out 0.3s;
+}
+
+.popup-candidate-infor .popup-container {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  width: 100%;
+  max-width: 1440px;
+  padding-left: 30px;
+  opacity: 0;
+  transition: all ease-in-out 0.5s;
+}
+
+.popup-candidate-infor.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup-candidate-infor.open .popup-container {
+  opacity: 1;
+  right: 0;
+}
+
+.popup-container .popup-content {
+  overflow-x: hidden;
+  height: 100%;
+  max-height: 100vh;
+}
+
+.popup-container .popup-content::-webkit-scrollbar {
+  width: 6px;
+  background-color: var(--white);
+  border: 1px solid var(--line);
+}
+
+.popup-container .popup-content::-webkit-scrollbar-thumb {
+  background-color: var(--placehover);
+  border-radius: 6px;
+}
+
+.popup-content .wrapper-author-page-title {
+  padding-top: 0;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.popup-content .wd-author-page-title .logo-company {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.popup-content .job-article.single-job .inner-content {
+  padding-right: 0;
+  padding-left: 25px;
 }
 
 /* shop */
