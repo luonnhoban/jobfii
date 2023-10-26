@@ -1132,7 +1132,7 @@ input[type="color"],
 #main-nav #menu-primary-menu .menu-item-has-children .menu-bar li.current-item,
 #main-nav #menu-primary-menu>li .sub-menu li:hover,
 #main-nav #menu-primary-menu>li .sub-menu li.current-item {
-  background-color: var(--surface);
+  background-color: var(--surface2);
 }
 
 #main-nav #menu-primary-menu>li .sub-menu .nav-sub.current-item:last-child,

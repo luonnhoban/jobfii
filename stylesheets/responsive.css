@@ -450,6 +450,23 @@
     /* width: calc(50% - 32px); */
   }
 
+  /* about us */
+  .wd-review-job.thumb2.stc .thumb {
+    margin-left: 0;
+  }
+
+  .wd-review-job.thumb2.stc .tes-box {
+    left: 4.5%;
+  }
+
+  .wd-review-job.thumb2 .icon2 {
+    right: 12%;
+  }
+
+  .wd-review-job.thumb2 .icon3 {
+    right: 6.5%;
+  }
+
   .blog-section .group-col-3 .cl3 {
     width: calc(33.3333% - 32px);
   }
@@ -990,8 +1007,8 @@
   }
 
   .wd-review-job.page-text.stc {
-    padding: 58px 60px;
     margin-bottom: 0;
+    margin-top: 8px;
   }
 
   .wd-review-job.contentbox1.stc3 {
@@ -1646,6 +1663,57 @@
 
   .wd-review-job.thumb2 .tes-box {
     top: 62%;
+    padding: 8px 16px 16px 8px;
+  }
+
+  .wd-review-job.thumb2.stc .tes-box {
+    /* animation: none; */
+    left: -2%;
+  }
+
+  .wd-review-job.thumb2 .tes-box svg {
+    width: 30px;
+    top: -24px;
+    left: -4px;
+  }
+
+  .wd-review-job.thumb2 .tes-box .avt img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .wd-review-job.thumb2 .tes-box .avt .badge {
+    width: 10px;
+    height: 10px;
+    padding: 0;
+  }
+
+  .wd-review-job.thumb2.stc .icon1 {
+    left: 2%;
+    top: -2%;
+    width: 60px;
+  }
+
+  .wd-review-job.thumb2 .icon2 {
+    right: 2%;
+    width: 50px;
+    top: 8%;
+  }
+
+  .wd-review-job.thumb2 .icon3 {
+    width: 50px;
+    bottom: 7%;
+    right: -4.5%;
+  }
+
+  .wd-review-job .menu-tab {
+    flex-wrap: nowrap;
+    gap: 24px;
+    width: max-content;
+  }
+
+  .wd-review-job .menu-tab .ct-tab {
+
   }
 
   .infor-contact-v1 {
