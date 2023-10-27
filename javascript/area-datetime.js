@@ -377,26 +377,39 @@ var options = {
 }
 
 document
+  .querySelector('#one_week')
+  .addEventListener('click', function(e) {
+    resetCssClasses(e)
+
+    chart.zoomX(
+      new Date('18 Feb 2013').getTime(),
+      new Date('26 Feb 2013').getTime()
+    )
+  })
+
+document
   .querySelector('#one_month')
   .addEventListener('click', function(e) {
     resetCssClasses(e)
 
     chart.zoomX(
-      new Date('28 Jan 2013').getTime(),
-      new Date('27 Feb 2013').getTime()
+      new Date('25 Jan 2013').getTime(),
+      new Date('26 Feb 2013').getTime()
     )
   })
 
-document
-  .querySelector('#six_months')
-  .addEventListener('click', function(e) {
-    resetCssClasses(e)
 
-    chart.zoomX(
-      new Date('27 Sep 2012').getTime(),
-      new Date('27 Feb 2013').getTime()
-    )
-  })
+
+// document
+//   .querySelector('#six_months')
+//   .addEventListener('click', function(e) {
+//     resetCssClasses(e)
+
+//     chart.zoomX(
+//       new Date('27 Sep 2012').getTime(),
+//       new Date('27 Feb 2013').getTime()
+//     )
+//   })
 
 document
   .querySelector('#one_year')
@@ -408,20 +421,20 @@ document
     )
   })
 
-document.querySelector('#ytd').addEventListener('click', function(e) {
-  resetCssClasses(e)
+// document.querySelector('#ytd').addEventListener('click', function(e) {
+//   resetCssClasses(e)
 
-  chart.zoomX(
-    new Date('01 Jan 2013').getTime(),
-    new Date('27 Feb 2013').getTime()
-  )
-})
+//   chart.zoomX(
+//     new Date('01 Jan 2013').getTime(),
+//     new Date('27 Feb 2013').getTime()
+//   )
+// })
 
-document.querySelector('#all').addEventListener('click', function(e) {
-  resetCssClasses(e)
+// document.querySelector('#all').addEventListener('click', function(e) {
+//   resetCssClasses(e)
 
-  chart.zoomX(
-    new Date('23 Jan 2012').getTime(),
-    new Date('27 Feb 2013').getTime()
-  )
-})
+//   chart.zoomX(
+//     new Date('23 Jan 2012').getTime(),
+//     new Date('27 Feb 2013').getTime()
+//   )
+// })
