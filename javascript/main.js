@@ -1479,3 +1479,19 @@ if (loadmoreBtn) {
     loadmoreBtn.querySelector('span').style.opacity = '0'
   })
 }
+
+
+if(document.getElementById("fileInput")) {
+  document.getElementById("fileInput").addEventListener("change", function () {
+    const fileInput = this;
+    const selectedFileName = document.getElementById("selectedFileName");
+  
+    if (fileInput.files.length > 0) {
+      // Nếu người dùng chọn tệp, hiển thị tên tệp lên nút tùy chỉnh
+      selectedFileName.textContent = fileInput.files[0].name;
+    } else {
+      // Nếu không có tệp nào được chọn, đặt nút tùy chỉnh lại thành văn bản mặc định
+      selectedFileName.textContent = "";
+    }
+  });
+}
