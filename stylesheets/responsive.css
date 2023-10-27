@@ -2526,6 +2526,16 @@
     align-items: flex-start;
   }
 
+  .flat-dashboard-applicants .features-job .inner-box {
+    flex-direction: column;
+  }
+
+  .flat-dashboard-applicants .features-job .inner-box .box-content .action {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
   .features-job .inner-box .box-content {
     margin-right: 22px;
   }
@@ -2863,6 +2873,16 @@
   .text-title {
     font-size: 14px;
     line-height: 24px;
+  }
+
+  .text-subtitle {
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  .dashboard h3 {
+    font: 16px/26px "Plus Jakarta Sans", sans-serif;
+    font-weight: 700;
   }
 
   .mt-40 {

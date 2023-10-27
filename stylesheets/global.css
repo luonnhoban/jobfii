@@ -169,6 +169,18 @@
     color: var(--purple);
 }
 
+.text-green {
+    color: var(--green);
+}
+
+.text-critical {
+    color: var(--critical);
+}
+
+.text-yellow {
+    color: var(--yellow);
+}
+
 .text-on-surface {
     color: var(--on-surface);
 }
@@ -191,10 +203,53 @@
 
 .bg-surface {
     background-color: var(--surface);
+    transition: all ease 0.3s;
 }
 
 .bg-surface2 {
     background-color: var(--surface2);
+    transition: all ease 0.3s;
+}
+
+.bg-surface:hover,
+.bg-surface2:hover {
+    background-color: var(--purple);
+    color: var(--white) !important;
+}
+
+.bg-surface:hover i {
+    color: var(--white);
+    transition: all ease 0.3s;
+}
+
+.bg-green-surface {
+    background: rgba(55, 184, 83, 0.10);
+    transition: all ease 0.3s;
+}
+
+.bg-green-surface:hover {
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.bg-critical-surface {
+    background: rgba(235, 77, 77, 0.10);
+    transition: all ease 0.3s;
+}
+
+.bg-critical-surface:hover {
+    background-color: var(--critical);
+    color: var(--white);
+}
+
+.bg-yellow-surface {
+    background: rgba(255, 179, 33, 0.10);
+    transition: all ease 0.3s;
+}
+
+.bg-yellow-surface:hover {
+    background-color: var(--yellow);
+    color: var(--white);
 }
 
 .bg-on-surface {
